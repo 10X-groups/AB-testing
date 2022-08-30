@@ -1,2 +1,2 @@
-INFO : 2022-08-30 16:57:14,852 : logger_importer : __init__ --> created a data cleaner logger for EDA notebook.
-INFO : 2022-08-30 16:57:14,859 : logger_importer : __init__ --> created a data visualier logger for EDA notebook.
+INFO : 2022-08-30 17:56:49,342 : loggerImporter : __init__ --> data cleaner logger for EDA notebook.
+INFO : 2022-08-30 17:56:49,351 : loggerImporter : __init__ --> data visualier logger for EDA notebook.

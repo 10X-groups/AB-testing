@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
 from scipy.spatial.distance import cdist
-from logger_importer import setup_logger
+from loggerImporter import setup_logger
 
 
 class dataCleaner():
@@ -29,8 +29,8 @@ class dataCleaner():
             This will return nothing, it just sets up the data cleaner
             script.
         """
-        logger = setup_logger('../logs/cleaner_root.log')
-        logger.info(f'created a data cleaner logger for {fromThe}.')
+        self.logger = setup_logger(self, '../logs/cleaner_root.log')
+        self.logger.info(f'data cleaner logger for {fromThe}.')
         print('Data cleaner in action.')
 
     def remove_unwanted_cols(self, cols: list) -> pd.DataFrame:

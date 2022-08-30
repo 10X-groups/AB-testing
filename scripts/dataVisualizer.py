@@ -3,10 +3,10 @@ A script to visualize data.
 """
 
 # imports
-import matplotlib.pyplot as plt
-import seaborn as sns
 import pandas as pd
-from logger_importer import setup_logger
+import seaborn as sns
+import matplotlib.pyplot as plt
+from loggerImporter import setup_logger
 
 
 class dataVisualizer():
@@ -28,8 +28,8 @@ class dataVisualizer():
             This will return nothing, it just sets up the data visualizer
             script.
         """
-        logger = setup_logger('../logs/visualizer_root.log')
-        logger.info(f'created a data visualier logger for {fromThe}.')
+        self.logger = setup_logger(self, '../logs/visualizer_root.log')
+        self.logger.info(f'data visualier logger for {fromThe}.')
         print('Data visualizer in action.')
 
     def plot_pie(self, df: pd.DataFrame, column: str, title: str,
