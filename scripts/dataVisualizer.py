@@ -28,11 +28,12 @@ class dataVisualizer():
             This will return nothing, it just sets up the data visualizer
             script.
         """
-        logger= setup_logger('../logs/visualizer_root.log')
+        logger = setup_logger('../logs/visualizer_root.log')
         logger.info(f'created a data visualier logger for {fromThe}.')
         print('Data visualizer in action.')
 
-    def plot_pie(self, df: pd.DataFrame, column: str, title: str, largest:int = 10) -> None:
+    def plot_pie(self, df: pd.DataFrame, column: str, title: str,
+                 largest:int = 10) -> None:
         """
         A function to plot pie charts
 

@@ -29,7 +29,7 @@ class dataCleaner():
             This will return nothing, it just sets up the data cleaner
             script.
         """
-        logger= setup_logger('../logs/cleaner_root.log')
+        logger = setup_logger('../logs/cleaner_root.log')
         logger.info(f'created a data cleaner logger for {fromThe}.')
         print('Data cleaner in action.')
 
