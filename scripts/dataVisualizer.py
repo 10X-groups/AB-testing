@@ -36,6 +36,7 @@ class dataVisualizer():
         # settingup seaborn styles
         #pals = ['deep', 'muted', 'bright', 'pastel', 'dark', 'colorblind']
         #sns.color_palette(palette='pastel')
+        # TODO: remove any other color
         sns.set_theme(style="darkgrid")
 
     def setup_logger(self, log_path: str) -> logging.Logger:
@@ -77,7 +78,6 @@ class dataVisualizer():
         # return the logger object
         return logger
 
-        # TODO: add color
     def plot_pie(self, df: pd.DataFrame, column: str, title: str = '',
                  largest:int = 10) -> None:
         """
@@ -102,12 +102,12 @@ class dataVisualizer():
         colors = sns.color_palette('muted')[0:last_num]
 
         plt.pie(data, labels=labels, colors=colors, autopct='%.000f%%')
-        if title != '':
-            plt.title(title)
-            self.logger.info(f'{title} pie plot ploted successfully')
-        else:
+        if title == '':
             plt.title(f'{column} pie plot')
             self.logger.info(f'{column} pie plot ploted successfully')
+        else:
+            plt.title(title)
+            self.logger.info(f'{title} pie plot ploted successfully')
         plt.show()
 
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
@@ -122,11 +122,17 @@ class dataVisualizer():
         # logger.info(f'Distribution of {column} plot successfully plotted')
         self.logger.info(f'{column} hist plot ploted successfully')
 
-    def plot_count(self, df: pd.DataFrame, column: str) -> None:
+    def plot_count(self, df: pd.DataFrame, column: str, hue:str = '', title:str = '') -> None:
         self.logger.info(f'setting up count plot')
         plt.figure(figsize=(12, 7))
-        sns.countplot(data=df, x=column)
-        plt.title(f'Distribution of {column}', size=20, fontweight='bold')
+        if hue == '':
+            sns.countplot(data=df, x=column)
+        else:
+            sns.countplot(data=df, x=column, hue=hue)
+        if title == '':
+            plt.title(f'Distribution of {column}', size=20, fontweight='bold')
+        else:
+            plt.title(f'Distribution of {title}', size=20, fontweight='bold')
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.xticks(rotation=45)

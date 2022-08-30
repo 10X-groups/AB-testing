@@ -69,3 +69,21 @@ INFO : 2022-08-30 22:44:34,366 : dataVisualizer : plot_count --> setting up coun
 INFO : 2022-08-30 22:44:35,108 : dataVisualizer : plot_count --> yes count plot ploted successfully
 INFO : 2022-08-30 22:46:32,190 : dataVisualizer : plot_count --> setting up count plot
 INFO : 2022-08-30 22:46:32,733 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 22:53:51,368 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 22:53:58,889 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:00,265 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 22:54:01,082 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:02,099 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 22:54:03,083 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:05,574 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 22:54:07,105 : dataVisualizer : plot_pie --> device_make pie plot ploted successfully
+INFO : 2022-08-30 22:54:09,278 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:10,145 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 22:54:10,814 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:12,718 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 22:54:13,493 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:14,570 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 22:54:15,446 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:16,291 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 22:57:52,051 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:57:53,222 : dataVisualizer : plot_count --> date count plot ploted successfully
