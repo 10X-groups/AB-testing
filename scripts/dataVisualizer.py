@@ -30,7 +30,7 @@ class dataVisualizer():
         """
         logger = setup_logger('../logs/visualizer_root.log')
         logger.info(f'data visualier logger for {fromThe}.')
-        print('Data visualizer in action.')
+        print('Data visualizer in action')
 
     def plot_pie(self, df: pd.DataFrame, column: str, title: str,
                  largest:int = 10) -> None:
@@ -58,7 +58,7 @@ class dataVisualizer():
         plt.pie(data, labels=labels, colors=colors, autopct='%.000f%%')
         plt.title(title)
         plt.show()
-        self.logger.info(f'{title} plot successfully')
+        self.logger.info(f'{title} pie plot ploted successfully')
 
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         # plt.figure(figsize=(15, 10))
@@ -67,12 +67,14 @@ class dataVisualizer():
                     aspect=2)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
+        self.logger.info(f'{plt.title} hist plot ploted successfully')
 
     def plot_count(self, df: pd.DataFrame, column: str) -> None:
         plt.figure(figsize=(12, 7))
         sns.countplot(data=df, x=column)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
+        self.logger.info(f'{plt.title} count plot ploted successfully')
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                  xlabel: str, ylabel: str) -> None:
@@ -84,7 +86,7 @@ class dataVisualizer():
         plt.xlabel(xlabel, fontsize=16)
         plt.ylabel(ylabel, fontsize=16)
         plt.show()
-        self.logger.info(f'{title} plot successfully')
+        self.logger.info(f'{title} bar plot ploted successfully')
 
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         plt.figure(figsize=(12, 7))
@@ -92,7 +94,7 @@ class dataVisualizer():
                     linewidths=.7, cbar=cbar)
         plt.title(title, size=18, fontweight='bold')
         plt.show()
-        self.logger.info(f'{title} plot successfully')
+        self.logger.info(f'{title} heat map plot ploted successfully')
 
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
         plt.figure(figsize=(12, 7))
@@ -100,7 +102,7 @@ class dataVisualizer():
         plt.title(title, size=20)
         plt.xticks(rotation=75, fontsize=14)
         plt.show()
-        self.logger.info(f'{title} plot successfully')
+        self.logger.info(f'{title} box plot ploted successfully')
 
     def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str,
                        title: str) -> None:
@@ -110,7 +112,7 @@ class dataVisualizer():
         plt.xticks(rotation=75, fontsize=14)
         plt.yticks(fontsize=14)
         plt.show()
-        self.logger.info(f'{title} plot successfully')
+        self.logger.info(f'{title} multi box plot ploted successfully')
 
     def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                      hue: str, style: str) -> None:
@@ -120,4 +122,4 @@ class dataVisualizer():
         plt.xticks(fontsize=14)
         plt.yticks(fontsize=14)
         plt.show()
-        self.logger.info(f'{title} plot successfully')
+        self.logger.info(f'{title} scatter plot ploted successfully')
