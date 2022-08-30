@@ -1,20 +1,36 @@
 """
-A data cleaner script
+A script to clean data.
 """
 
+# imports
 import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
 from scipy.spatial.distance import cdist
+from logger_importer import setup_logger
 
 
 class dataCleaner():
     """
-    A data cleaner class
+    A data cleaner class.
     """
-    def __init__(self) -> None:
-    #def __init__(self, df: pd.DataFrame) -> None:
-        #self.df = df
+    def __init__(self, fromThe: str) -> None:
+        """
+        The data cleaner initializer
+
+        Parameters
+        =--------=
+        fromThe: string
+            The file importing the data cleaner
+
+        Returns
+        =-----=
+        None: nothing
+            This will return nothing, it just sets up the data cleaner
+            script.
+        """
+        logger= setup_logger('../logs/cleaner_root.log')
+        logger.info(f'created a data cleaner logger for {fromThe}.')
         print('Data cleaner in action.')
 
     def remove_unwanted_cols(self, cols: list) -> pd.DataFrame:

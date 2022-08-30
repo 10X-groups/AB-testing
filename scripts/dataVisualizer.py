@@ -1,15 +1,35 @@
 """
-A script to visualize data
+A script to visualize data.
 """
 
 # imports
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+from logger_importer import setup_logger
 
 
 class dataVisualizer():
-    def __init__(self) -> None:
+    """
+    A data visulalizer class.
+    """
+    def __init__(self, fromThe: str) -> None:
+        """
+        The data visualizer initializer
+
+        Parameters
+        =--------=
+        fromThe: string
+            The file importing the data visualizer
+
+        Returns
+        =-----=
+        None: nothing
+            This will return nothing, it just sets up the data visualizer
+            script.
+        """
+        logger= setup_logger('../logs/visualizer_root.log')
+        logger.info(f'created a data visualier logger for {fromThe}.')
         print('Data visualizer in action.')
 
     def plot_pie(self, df: pd.DataFrame, column: str, title: str, largest:int = 10) -> None:
