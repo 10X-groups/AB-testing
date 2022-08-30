@@ -3,7 +3,7 @@
 # https://dvc.org/doc/user-guide/dvcignore
 
 # script realted dvc ignores
-scripts/logger_importer.py
+scripts/*
 
 # notebook realted dvc ignores
 notebooks/*
