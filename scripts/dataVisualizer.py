@@ -28,22 +28,28 @@ class dataVisualizer():
             This will return nothing, it just sets up the data visualizer
             script.
         """
+        # setting up logger
         self.logger = self.setup_logger('../logs/visualizer_root.log')
         self.logger.info(f'data visualier logger for {fromThe}.')
         print('Data visualizer in action')
 
+        # settingup seaborn styles
+        pals = ['deep', 'muted', 'bright', 'pastel', 'dark', 'colorblind']
+        #sns.set_theme(style="darkgrid")
+        sns.color_palette(palette='bright')
+
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
-        A helper method to set up logging.
+        A function to set up logging
 
         Parameters
         =--------=
-        log_path: a python string object
+        log_path: string
             The path of the file handler for the logger
 
         Returns
         =-----=
-        logger: a python logger object
+        logger: logger
             The final logger that has been setup up
         """
         # getting the log path
@@ -71,6 +77,7 @@ class dataVisualizer():
         # return the logger object
         return logger
 
+        # TODO: add color
     def plot_pie(self, df: pd.DataFrame, column: str, title: str,
                  largest:int = 10) -> None:
         """
@@ -109,20 +116,19 @@ class dataVisualizer():
         plt.show()
         # TODO: if logger info is bad try this
         # logger.info(f'Distribution of {column} plot successfully plotted')
-        self.logger.info(f'{plt.title} hist plot ploted successfully')
+        self.logger.info(f'{column} hist plot ploted successfully')
 
     def plot_count(self, df: pd.DataFrame, column: str) -> None:
         self.logger.info(f'setting up count plot')
         plt.figure(figsize=(12, 7))
-        # TODO: get edegcolor meaning and add color
-        sns.countplot(data=df, x=column, facecolor=(0, 0, 0, 0), linewidth=5,  edgecolor=sns.color_palette("pastel", 3))
+        sns.countplot(data=df, x=column)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.show()
         # TODO: if logger info is bad try this
         # logger.info(f'Distribution of {column} plot successfully plotted')
-        self.logger.info(f'{plt.title} count plot ploted successfully')
+        self.logger.info(f'{column} count plot ploted successfully')
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                  xlabel: str, ylabel: str) -> None:

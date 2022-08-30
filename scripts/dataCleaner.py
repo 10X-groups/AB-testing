@@ -29,22 +29,23 @@ class dataCleaner():
             This will return nothing, it just sets up the data cleaner
             script.
         """
+        # setting up logger
         self.logger = self.setup_logger('../logs/cleaner_root.log')
         self.logger.info(f'data cleaner logger for {fromThe}')
         print('Data cleaner in action')
 
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
-        A helper method to set up logging.
+        A function to set up logging
 
         Parameters
         =--------=
-        log_path: a python string object
+        log_path: string
             The path of the file handler for the logger
 
         Returns
         =-----=
-        logger: a python logger object
+        logger: logger
             The final logger that has been setup up
         """
         # getting the log path
