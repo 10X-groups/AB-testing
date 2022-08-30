@@ -63,23 +63,34 @@ class dataVisualizer():
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         # plt.figure(figsize=(15, 10))
         # fig, ax = plt.subplots(1, figsize=(12, 7))
+        self.logger.info(f'setting up distribution plot')
         sns.displot(data=df, x=column, color=color, kde=True, height=7,
                     aspect=2)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
+        # TODO: if logger info is bad try this
+        # logger.info(f'Distribution of {column} plot successfully plotted')
         self.logger.info(f'{plt.title} hist plot ploted successfully')
 
     def plot_count(self, df: pd.DataFrame, column: str) -> None:
+        self.logger.info(f'setting up count plot')
         plt.figure(figsize=(12, 7))
-        sns.countplot(data=df, x=column)
+        # TODO: get edegcolor meaning and add color
+        sns.countplot(data=df, x=column, facecolor=(0, 0, 0, 0), linewidth=5,  edgecolor=sns.color_palette("pastel", 3))
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
+        plt.xlabel(f'{column}', fontsize=16)
+        plt.ylabel("Count", fontsize=16)
         plt.show()
+        # TODO: if logger info is bad try this
+        # logger.info(f'Distribution of {column} plot successfully plotted')
         self.logger.info(f'{plt.title} count plot ploted successfully')
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                  xlabel: str, ylabel: str) -> None:
+        self.logger.info(f'setting up bar plot')
         plt.figure(figsize=(12, 7))
-        sns.barplot(data=df, x=x_col, y=y_col)
+        # TODO: modify palette
+        sns.barplot(data=df, x=x_col, y=y_col, palette= "Blues")
         plt.title(title, size=20)
         plt.xticks(rotation=75, fontsize=14)
         plt.yticks(fontsize=14)
@@ -89,14 +100,16 @@ class dataVisualizer():
         self.logger.info(f'{title} bar plot ploted successfully')
 
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
+        self.logger.info(f'setting up heat map plot')
         plt.figure(figsize=(12, 7))
         sns.heatmap(df, annot=True, cmap='viridis', vmin=0, vmax=1, fmt='.2f',
                     linewidths=.7, cbar=cbar)
-        plt.title(title, size=18, fontweight='bold')
+        plt.title(title, size=20, fontweight='bold')
         plt.show()
         self.logger.info(f'{title} heat map plot ploted successfully')
 
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
+        self.logger.info(f'setting up box plot')
         plt.figure(figsize=(12, 7))
         sns.boxplot(data=df, x=x_col)
         plt.title(title, size=20)
@@ -106,6 +119,7 @@ class dataVisualizer():
 
     def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str,
                        title: str) -> None:
+        self.logger.info(f'setting up box plot')
         plt.figure(figsize=(12, 7))
         sns.boxplot(data=df, x=x_col, y=y_col)
         plt.title(title, size=20)
@@ -116,6 +130,7 @@ class dataVisualizer():
 
     def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                      hue: str, style: str) -> None:
+        self.logger.info(f'setting up scatter plot')
         plt.figure(figsize=(12, 7))
         sns.scatterplot(data=df, x=x_col, y=y_col, hue=hue, style=style)
         plt.title(title, size=20)
@@ -123,3 +138,17 @@ class dataVisualizer():
         plt.yticks(fontsize=14)
         plt.show()
         self.logger.info(f'{title} scatter plot ploted successfully')
+
+    def bivariate_plot(self, df,features, fields):
+        fig, axs = plt.subplots(10,3, figsize=(20,45))
+        for col in range(len(features)):  
+            for f in range(len(fields)):  
+                self.logger.info(f'setting up hist plot')
+                sns.histplot(df, 
+                            x=features[col]+"_"+fields[f], 
+                            hue="diagnosis", element="bars", 
+                            stat="count", 
+                            # TODO : modify palette
+                            palette=["gold", "purple"],
+                            ax=axs[col][f])
+        self.logger.info(f'several bi-variate plots plotted successfully')
