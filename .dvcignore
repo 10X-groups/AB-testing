@@ -3,10 +3,10 @@
 # https://dvc.org/doc/user-guide/dvcignore
 
 # script realted dvc ignores
-/scripts
+scripts/
 
 # notebook realted dvc ignores
-/notebooks
+notebooks/
 
 # log realted dvc ignores
-/logs
+logs/
