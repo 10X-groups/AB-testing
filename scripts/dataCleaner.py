@@ -29,9 +29,9 @@ class dataCleaner():
             This will return nothing, it just sets up the data cleaner
             script.
         """
-        self.logger = setup_logger(self, '../logs/cleaner_root.log')
-        self.logger.info(f'data cleaner logger for {fromThe}.')
-        print('Data cleaner in action.')
+        logger = setup_logger('../logs/cleaner_root.log')
+        logger.info(f'data cleaner logger for {fromThe}')
+        print('Data cleaner in action')
 
     def remove_unwanted_cols(self, cols: list) -> pd.DataFrame:
         """
@@ -49,7 +49,9 @@ class dataCleaner():
         """
         try:
             self.df.drop(cols, axis=1, inplace=True)
+            self.logger.info(f'columns: {cols} removed successfully')
         except Exception as e:
+            self.logger.error(e)
             print(e)
         finally:
             return self.df
@@ -83,7 +85,11 @@ class dataCleaner():
             print("The dataset contains", round(((totalMissing/totalCells)*
                                                  100), 10), "%", 
                                                  "missing values.")
+            self.logger.info("The dataset contains", round((
+                                                (totalMissing/totalCells)*100
+                                                ),10), "%", "missing values")
         except Exception as e:
+            self.logger.error(e)
             print(e)
 
     def convert_to_datetime(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -103,49 +109,13 @@ class dataCleaner():
         try:
             df['Start'] = pd.to_datetime(df['Start'], errors='coerce')
             df['End'] = pd.to_datetime(df['End'], errors='coerce')
+            self.logger.info(f"features start and end successfully converted"
+                               + "to date time")
         except Exception as e:
+            self.logger.error(e)
             print(e)
-        return df
-
-    def fill_na(self, type: str, df: pd.DataFrame, 
-                cols: list) -> pd.DataFrame:
-        """
-        A function to fill nulls and undefined data types
-
-        Parameters
-        =--------=
-        type: string
-            The type of the fill. Eg: mode, mean, median
-        df: pd.dataframe
-            The data frame to fill
-        cols: list
-            The list of columns to be filled
-
-        Returns
-        =-----=
-        self.df: pandas dataframe
-            The modified dataframe
-        """
-        try:
-            if (type == 'mean'):
-                for col in cols:
-                    self.df.col.fillna(value=df.col.mean(), axis=1,
-                                    inplace=True)
-                return self.df
-            elif (type == 'median'):
-                for col in cols:
-                    self.df.col.fillna(value=df.col.median(), axis=1,
-                                    inplace=True)
-                return self.df
-            elif (type == 'mode'):
-                for col in cols:
-                    self.df.col.fillna(value=df.col.mode(), axis=1,
-                                    inplace=True)
-                return self.df
-            else:
-                print('type must be either mean, median or mode')
-        except Exception as e:
-            print(e)
+        finally:
+            return df
 
     def fillWithMedian(self, df: pd.DataFrame, cols: list) -> pd.DataFrame:
         """
@@ -168,9 +138,12 @@ class dataCleaner():
         try:
             print(f'columns to be filled with median values: {cols}')
             df[cols] = df[cols].fillna(df[cols].median())
+            self.logger.info(f'cols: {cols} filled with median successfully')
         except Exception as e:
+            self.logger.error(e)
             print(e)
-        return df
+        finally:
+            return df
 
     def fillWithMean(self, df: pd.DataFrame, cols: list) -> pd.DataFrame:
         """
@@ -193,9 +166,12 @@ class dataCleaner():
         try:
             print(f'columns to be filled with mean values: {cols}')
             df[cols] = df[cols].fillna(df[cols].mean())
+            self.logger.info(f'cols: {cols} filled with mean successfully')
         except Exception as e:
+            self.logger.error(e)
             print(e)
-        return df
+        finally:
+            return df
 
     def fix_outlier(self, df: pd.DataFrame, column: str) -> pd.DataFrame:
         """
@@ -217,9 +193,12 @@ class dataCleaner():
             print(f'column to be filled with median values: {column}')
             df[column] = np.where(df[column] > df[column].quantile(0.95),
                                 df[column].median(),df[column])
+            self.logger.info(f'column: {column} outlier fixed successfully')
         except Exception as e:
+            self.logger.error(e)
             print(e)
-        return df[column]
+        finally:
+            return df[column]
 
     def choose_k_means(self, df: pd.DataFrame, num: int):
         """
@@ -246,10 +225,14 @@ class dataCleaner():
                     np.min(cdist(df, k_means.cluster_centers_, 'euclidean'), 
                                 axis=1)) / df.shape[0])
                 inertias.append(k_means.inertia_)
+            self.logger.info(f'distortion: {distortions} and inertia:' +  
+                             f'{inertias} calculated for {num} number of'
+                              'clusters successfully')
         except Exception as e:
+            self.logger.error(e)
             print(e)
-
-        return (distortions, inertias)
+        finally:
+            return (distortions, inertias)
 
     def computeBasicAnalysisOnClusters(self, df: pd.DataFrame, 
                                        cluster_col: str , cluster_size: int,
@@ -280,5 +263,8 @@ class dataCleaner():
                 print("Cluster " + (i+1) * "I")
                 print(cluster[cols].describe())
                 print("\n")
+            self.logger.info(f'baic analysis on {cluster_size} clusters' + 
+                              'computed successfully')
         except Exception as e:
+            self.logger.error(e)
             print(e)
