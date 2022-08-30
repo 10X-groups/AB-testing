@@ -7,8 +7,8 @@ import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
 from scipy.spatial.distance import cdist
-from loggerImporter import setup_logger
-
+#from loggerImporter import setup_logger
+import logging
 
 class dataCleaner():
     """
@@ -29,9 +29,48 @@ class dataCleaner():
             This will return nothing, it just sets up the data cleaner
             script.
         """
-        logger = setup_logger('../logs/cleaner_root.log')
-        logger.info(f'data cleaner logger for {fromThe}')
+        self.logger = self.setup_logger('../logs/cleaner_root.log')
+        self.logger.info(f'data cleaner logger for {fromThe}')
         print('Data cleaner in action')
+
+    def setup_logger(self, log_path: str) -> logging.Logger:
+        """
+        A helper method to set up logging.
+
+        Parameters
+        =--------=
+        log_path: a python string object
+            The path of the file handler for the logger
+
+        Returns
+        =-----=
+        logger: a python logger object
+            The final logger that has been setup up
+        """
+        # getting the log path
+        log_path = log_path
+
+        # adding logger to the script
+        logger = logging.getLogger(__name__)
+        print(f'--> {logger}')
+        # setting the log level to info
+        logger.setLevel(logging.INFO)
+        # setting up file handler
+        file_handler= logging.FileHandler(log_path)
+
+        # setting up formatter
+        formatter= logging.Formatter(
+            "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " + 
+            "--> %(message)s")
+
+        # setting up file handler and formatter
+        file_handler.setFormatter(formatter)
+        # adding file handler
+        logger.addHandler(file_handler)
+
+        print(f'logger {logger} created at path: {log_path}')
+        # return the logger object
+        return logger
 
     def remove_unwanted_cols(self, cols: list) -> pd.DataFrame:
         """
@@ -199,6 +238,17 @@ class dataCleaner():
             print(e)
         finally:
             return df[column]
+
+    # TODO  : determine which one is better
+    def fix_outlier_(self, df):
+        self.logger.info(f'setting up columns to be fixed for outlier')
+        column_name=list(df.columns[2:])
+        for i in column_name:
+            upper_quartile=df[i].quantile(0.75)
+            lower_quartile=df[i].quantile(0.25)
+            df[i]=np.where(df[i]>upper_quartile,df[i].median(),np.where(df[i]<lower_quartile,df[i].median(),df[i]))
+        self.logger.info(f'outliers fixed successfully')
+        return df
 
     def choose_k_means(self, df: pd.DataFrame, num: int):
         """
