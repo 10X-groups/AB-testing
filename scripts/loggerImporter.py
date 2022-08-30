@@ -33,7 +33,8 @@ def setup_logger(log_path: str) -> logging.Logger:
 
         # setting up formatter
         formatter= logging.Formatter(
-            "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s --> %(message)s")
+            "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " + 
+            "--> %(message)s")
 
         # setting up file handler and formatter
         file_handler.setFormatter(formatter)
