@@ -6,7 +6,7 @@ A logger creator class.
 import logging
 
 
-def setup_logger(self, log_path: str) -> logging.Logger:
+def setup_logger(log_path: str) -> logging.Logger:
         """
         A helper method to set up logging.
 
@@ -24,9 +24,9 @@ def setup_logger(self, log_path: str) -> logging.Logger:
         log_path = log_path
 
         # adding logger to the script
-        self.logger = logging.getLogger(__name__)
+        logger = logging.getLogger(__name__)
         # setting the log level to info
-        self.logger.setLevel(logging.INFO)
+        logger.setLevel(logging.INFO)
         # setting up file handler
         file_handler= logging.FileHandler(log_path)
 
@@ -37,8 +37,8 @@ def setup_logger(self, log_path: str) -> logging.Logger:
         # setting up file handler and formatter
         file_handler.setFormatter(formatter)
         # adding file handler
-        self.logger.addHandler(file_handler)
+        logger.addHandler(file_handler)
 
-        print(f'logger {self.logger} created at path: {log_path}')
+        print(f'logger {logger} created at path: {log_path}')
         # return the logger object
-        return self.logger
+        return logger
