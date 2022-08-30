@@ -34,9 +34,9 @@ class dataVisualizer():
         print('Data visualizer in action')
 
         # settingup seaborn styles
-        pals = ['deep', 'muted', 'bright', 'pastel', 'dark', 'colorblind']
-        #sns.set_theme(style="darkgrid")
-        sns.color_palette(palette='bright')
+        #pals = ['deep', 'muted', 'bright', 'pastel', 'dark', 'colorblind']
+        #sns.color_palette(palette='pastel')
+        sns.set_theme(style="darkgrid")
 
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
@@ -78,7 +78,7 @@ class dataVisualizer():
         return logger
 
         # TODO: add color
-    def plot_pie(self, df: pd.DataFrame, column: str, title: str,
+    def plot_pie(self, df: pd.DataFrame, column: str, title: str = '',
                  largest:int = 10) -> None:
         """
         A function to plot pie charts
@@ -102,9 +102,13 @@ class dataVisualizer():
         colors = sns.color_palette('muted')[0:last_num]
 
         plt.pie(data, labels=labels, colors=colors, autopct='%.000f%%')
-        plt.title(title)
+        if title != '':
+            plt.title(title)
+            self.logger.info(f'{title} pie plot ploted successfully')
+        else:
+            plt.title(f'{column} pie plot')
+            self.logger.info(f'{column} pie plot ploted successfully')
         plt.show()
-        self.logger.info(f'{title} pie plot ploted successfully')
 
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         # plt.figure(figsize=(15, 10))
@@ -125,6 +129,7 @@ class dataVisualizer():
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
+        plt.xticks(rotation=45)
         plt.show()
         # TODO: if logger info is bad try this
         # logger.info(f'Distribution of {column} plot successfully plotted')
@@ -134,8 +139,7 @@ class dataVisualizer():
                  xlabel: str, ylabel: str) -> None:
         self.logger.info(f'setting up bar plot')
         plt.figure(figsize=(12, 7))
-        # TODO: modify palette
-        sns.barplot(data=df, x=x_col, y=y_col, palette= "Blues")
+        sns.barplot(data=df, x=x_col, y=y_col)
         plt.title(title, size=20)
         plt.xticks(rotation=75, fontsize=14)
         plt.yticks(fontsize=14)
