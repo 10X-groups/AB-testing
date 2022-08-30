@@ -38,6 +38,8 @@ class dataVisualizer():
         #sns.color_palette(palette='pastel')
         # TODO: remove any other color
         sns.set_theme(style="darkgrid")
+        # TODO : modify all log messages properly
+
 
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
@@ -132,15 +134,16 @@ class dataVisualizer():
             sns.countplot(data=df, x=column, hue=hue)
         if title == '':
             plt.title(f'Distribution of {column}', size=20, fontweight='bold')
+            self.logger.info(f'{column} count plot ploted successfully')
         else:
             plt.title(f'Distribution of {title}', size=20, fontweight='bold')
+            self.logger.info(f'{title} count plot ploted successfully')
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.xticks(rotation=45)
         plt.show()
         # TODO: if logger info is bad try this
         # logger.info(f'Distribution of {column} plot successfully plotted')
-        self.logger.info(f'{column} count plot ploted successfully')
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                  xlabel: str, ylabel: str) -> None:
@@ -155,7 +158,7 @@ class dataVisualizer():
         plt.show()
         self.logger.info(f'{title} bar plot ploted successfully')
 
-    # TODO : udate this correlation map with the one from last week
+    # TODO : update this correlation map with the one from last week
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         self.logger.info(f'setting up heat map plot')
         plt.figure(figsize=(12, 7))
