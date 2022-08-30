@@ -78,6 +78,7 @@ class dataVisualizer():
         # return the logger object
         return logger
 
+    # TODO : add the name and things from last weeks pie plot function
     def plot_pie(self, df: pd.DataFrame, column: str, title: str = '',
                  largest:int = 10) -> None:
         """
@@ -154,11 +155,15 @@ class dataVisualizer():
         plt.show()
         self.logger.info(f'{title} bar plot ploted successfully')
 
+    # TODO : udate this correlation map with the one from last week
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         self.logger.info(f'setting up heat map plot')
         plt.figure(figsize=(12, 7))
-        sns.heatmap(df, annot=True, cmap='viridis', vmin=0, vmax=1, fmt='.2f',
-                    linewidths=.7, cbar=cbar)
+        """sns.heatmap(df.corr(), annot=True, cmap='viridis', vmin=0, vmax=1, fmt='.2f',
+                    linewidths=.7, cbar=cbar)"""
+
+        sns.heatmap(df.corr(), annot=True, fmt='.5f', linewidths=1, cbar=True)
+
         plt.title(title, size=20, fontweight='bold')
         plt.show()
         self.logger.info(f'{title} heat map plot ploted successfully')

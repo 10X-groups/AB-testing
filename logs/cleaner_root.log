@@ -29,3 +29,6 @@ INFO : 2022-08-30 22:09:34,251 : dataCleaner : __init__ --> data cleaner logger 
 INFO : 2022-08-30 22:10:23,896 : dataCleaner : __init__ --> data cleaner logger for EDA notebook
 INFO : 2022-08-30 22:30:47,813 : dataCleaner : __init__ --> data cleaner logger for EDA notebook
 INFO : 2022-08-30 22:53:51,354 : dataCleaner : __init__ --> data cleaner logger for EDA notebook
+INFO : 2022-08-30 23:44:13,279 : dataCleaner : __init__ --> data cleaner logger for EDA notebook
+INFO : 2022-08-30 23:52:17,410 : dataCleaner : __init__ --> data cleaner logger for EDA notebook
+INFO : 2022-08-30 23:58:00,057 : dataCleaner : __init__ --> data cleaner logger for EDA notebook
