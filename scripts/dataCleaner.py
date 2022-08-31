@@ -342,7 +342,7 @@ class dataCleaner():
                 print("Cluster " + (i+1) * "I")
                 print(cluster[cols].describe())
                 print("\n")
-            self.logger.info(f'baic analysis on {cluster_size} clusters' + 
+            self.logger.info(f'basic analysis on {cluster_size} clusters' + 
                               'computed successfully')
         except Exception as e:
             self.logger.error(e)

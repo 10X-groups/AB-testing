@@ -10,7 +10,7 @@ import logging
 
 class dataVisualizer():
     """
-    A data visulalizer class.
+    A data visualizer class.
     """
     def __init__(self, fromThe: str) -> None:
         """
@@ -29,16 +29,15 @@ class dataVisualizer():
         """
         # setting up logger
         self.logger = self.setup_logger('../logs/visualizer_root.log')
-        self.logger.info(f'data visualier logger for {fromThe}.')
+        self.logger.info(f'data visualizer logger for {fromThe}.')
         print('Data visualizer in action')
 
-        # settingup seaborn styles
+        # setting up seaborn styles
         #pals = ['deep', 'muted', 'bright', 'pastel', 'dark', 'colorblind']
         #sns.color_palette(palette='pastel')
         # TODO: remove any other color
         sns.set_theme(style="darkgrid")
         # TODO : modify all log messages properly
-
         # TODO : add comments to all visualizer functions
         # TODO : add try catch to all visualizer functions
 
@@ -114,10 +113,10 @@ class dataVisualizer():
         plt.pie(data, labels=labels, colors=colors, autopct='%.000f%%')
         if title == '':
             plt.title(f'{column} pie plot')
-            self.logger.info(f'{column} pie plot ploted successfully')
+            self.logger.info(f'{column} pie plot plotted successfully')
         else:
             plt.title(title)
-            self.logger.info(f'{title} pie plot ploted successfully')
+            self.logger.info(f'{title} pie plot plotted successfully')
         plt.show()
 
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
@@ -130,7 +129,7 @@ class dataVisualizer():
         plt.show()
         # TODO: if logger info is bad try this
         # logger.info(f'Distribution of {column} plot successfully plotted')
-        self.logger.info(f'{column} hist plot ploted successfully')
+        self.logger.info(f'{column} hist plot plotted successfully')
 
     def plot_count(self, df: pd.DataFrame, column: str, hue:str = '', title:str = '') -> None:
         self.logger.info(f'setting up count plot')
@@ -141,10 +140,10 @@ class dataVisualizer():
             sns.countplot(data=df, x=column, hue=hue)
         if title == '':
             plt.title(f'Distribution of {column}', size=20, fontweight='bold')
-            self.logger.info(f'{column} count plot ploted successfully')
+            self.logger.info(f'{column} count plot plotted successfully')
         else:
             plt.title(f'Distribution of {title}', size=20, fontweight='bold')
-            self.logger.info(f'{title} count plot ploted successfully')
+            self.logger.info(f'{title} count plot plotted successfully')
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.xticks(rotation=45)
@@ -163,7 +162,7 @@ class dataVisualizer():
         plt.xlabel(xlabel, fontsize=16)
         plt.ylabel(ylabel, fontsize=16)
         plt.show()
-        self.logger.info(f'{title} bar plot ploted successfully')
+        self.logger.info(f'{title} bar plot plotted successfully')
 
     # TODO : update this correlation map with the one from last week
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
@@ -172,7 +171,7 @@ class dataVisualizer():
         sns.heatmap(df.corr(), annot=True, fmt='.5f', linewidths=1, cbar=True)
         plt.title(title, size=20, fontweight='bold')
         plt.show()
-        self.logger.info(f'{title} heat map plot ploted successfully')
+        self.logger.info(f'{title} heat map plot plotted successfully')
 
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
         self.logger.info(f'setting up box plot')
@@ -181,7 +180,7 @@ class dataVisualizer():
         plt.title(title, size=20)
         plt.xticks(rotation=75, fontsize=14)
         plt.show()
-        self.logger.info(f'{title} box plot ploted successfully')
+        self.logger.info(f'{title} box plot plotted successfully')
 
     def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str,
                        title: str) -> None:
@@ -192,7 +191,7 @@ class dataVisualizer():
         plt.xticks(rotation=75, fontsize=14)
         plt.yticks(fontsize=14)
         plt.show()
-        self.logger.info(f'{title} multi box plot ploted successfully')
+        self.logger.info(f'{title} multi box plot plotted successfully')
 
     def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                      hue: str, style: str) -> None:
@@ -203,17 +202,15 @@ class dataVisualizer():
         plt.xticks(fontsize=14)
         plt.yticks(fontsize=14)
         plt.show()
-        self.logger.info(f'{title} scatter plot ploted successfully')
+        self.logger.info(f'{title} scatter plot plotted successfully')
 
     def bivariate_plot(self, df,features, fields):
         fig, axs = plt.subplots(10,3, figsize=(20,45))
         for col in range(len(features)):  
             for f in range(len(fields)):  
                 self.logger.info(f'setting up hist plot')
-                sns.histplot(df, 
-                            x=features[col]+"_"+fields[f], 
-                            hue="diagnosis", element="bars", 
-                            stat="count", 
+                sns.histplot(df, x=features[col]+"_"+fields[f],
+                            hue="diagnosis", element="bars", stat="count", 
                             # TODO : modify palette
                             palette=["gold", "purple"],
                             ax=axs[col][f])
