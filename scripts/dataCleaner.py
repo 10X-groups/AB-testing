@@ -7,7 +7,6 @@ import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
 from scipy.spatial.distance import cdist
-#from loggerImporter import setup_logger
 import logging
 
 class dataCleaner():
@@ -29,10 +28,13 @@ class dataCleaner():
             This will return nothing, it just sets up the data cleaner
             script.
         """
-        # setting up logger
-        self.logger = self.setup_logger('../logs/cleaner_root.log')
-        self.logger.info(f'data cleaner logger for {fromThe}')
-        print('Data cleaner in action')
+        try:
+            # setting up logger
+            self.logger = self.setup_logger('../logs/cleaner_root.log')
+            self.logger.info(f'data cleaner logger for {fromThe}')
+            print('Data cleaner in action')
+        except Exception as e:
+            print(e)
 
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
@@ -48,30 +50,35 @@ class dataCleaner():
         logger: logger
             The final logger that has been setup up
         """
-        # getting the log path
-        log_path = log_path
+        try:
+            # getting the log path
+            log_path = log_path
 
-        # adding logger to the script
-        logger = logging.getLogger(__name__)
-        print(f'--> {logger}')
-        # setting the log level to info
-        logger.setLevel(logging.INFO)
-        # setting up file handler
-        file_handler= logging.FileHandler(log_path)
+            # adding logger to the script
+            logger = logging.getLogger(__name__)
+            print(f'--> {logger}')
+            # setting the log level to info
+            logger.setLevel(logging.INFO)
+            # setting up file handler
+            file_handler= logging.FileHandler(log_path)
 
-        # setting up formatter
-        formatter= logging.Formatter(
-            "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " + 
-            "--> %(message)s")
+            # setting up formatter
+            formatter= logging.Formatter(
+                "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " + 
+                "--> %(message)s")
 
-        # setting up file handler and formatter
-        file_handler.setFormatter(formatter)
-        # adding file handler
-        logger.addHandler(file_handler)
+            # setting up file handler and formatter
+            file_handler.setFormatter(formatter)
+            # adding file handler
+            logger.addHandler(file_handler)
 
-        print(f'logger {logger} created at path: {log_path}')
-        # return the logger object
-        return logger
+            print(f'logger {logger} created at path: {log_path}')
+            # return the logger object
+        except Exception as e:
+            logger.error(e)
+            print(e)
+        finally:
+            return logger
 
     def remove_unwanted_cols(self, cols: list) -> pd.DataFrame:
         """
@@ -241,15 +248,36 @@ class dataCleaner():
             return df[column]
 
     # TODO  : determine which one is better
-    def fix_outlier_(self, df):
-        self.logger.info(f'setting up columns to be fixed for outlier')
-        column_name=list(df.columns[2:])
-        for i in column_name:
-            upper_quartile=df[i].quantile(0.75)
-            lower_quartile=df[i].quantile(0.25)
-            df[i]=np.where(df[i]>upper_quartile,df[i].median(),np.where(df[i]<lower_quartile,df[i].median(),df[i]))
-        self.logger.info(f'outliers fixed successfully')
-        return df
+    def fix_outlier_(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        A function to fix outliers
+
+        Parameters
+        =--------=
+        df:  pandas data frame
+            The data frame containing the outlier columns
+
+        Returns
+        =-----=
+        df:  pandas data frame
+            The data frame with the outlier columns fixed
+        """
+        try:
+            self.logger.info(f'setting up columns to be fixed for outlier')
+            # TODO : either pass the outlier columns or checkout the columns list 
+            column_name=list(df.columns[2:])
+            for i in column_name:
+                upper_quartile=df[i].quantile(0.75)
+                lower_quartile=df[i].quantile(0.25)
+                df[i]=np.where(df[i]>upper_quartile,df[i].median(),
+                            np.where(df[i]<lower_quartile,df[i].median(),
+                            df[i]))
+            self.logger.info(f'outliers fixed successfully')
+        except Exception as e:
+            self.logger.error(e)
+            print(e)
+        finally:
+            return df
 
     def choose_k_means(self, df: pd.DataFrame, num: int):
         """
@@ -287,7 +315,7 @@ class dataCleaner():
 
     def computeBasicAnalysisOnClusters(self, df: pd.DataFrame, 
                                        cluster_col: str , cluster_size: int,
-                                       cols: list):
+                                       cols: list) -> None:
         """
         A function that gives some basic description of the 3 clusters
         
@@ -307,14 +335,14 @@ class dataCleaner():
         None: nothing
             This function only prints out information
         """
-        i=0
         try:
+            i=0
             for i in range(cluster_size):
                 cluster = df[df[cluster_col]==i]
                 print("Cluster " + (i+1) * "I")
                 print(cluster[cols].describe())
                 print("\n")
-            self.logger.info(f'baic analysis on {cluster_size} clusters' + 
+            self.logger.info(f'basic analysis on {cluster_size} clusters' + 
                               'computed successfully')
         except Exception as e:
             self.logger.error(e)
