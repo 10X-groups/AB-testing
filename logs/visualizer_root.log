@@ -1,0 +1,180 @@
+INFO : 2022-08-30 20:54:56,049 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:03:39,292 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:03:42,491 : dataVisualizer : plot_count --> <function title at 0x0000023563321BD0> count plot ploted successfully
+INFO : 2022-08-30 21:08:09,638 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:08:14,249 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:08:14,846 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 21:10:15,276 : dataVisualizer : __init__ --> 
+
+data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:10:20,412 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:10:21,105 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 21:11:21,055 : dataVisualizer : __init__ --> 
+
+data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:11:24,476 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:11:25,168 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 21:13:25,100 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:13:30,628 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:13:31,569 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 21:20:59,325 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:21:30,516 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:21:30,516 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:21:51,356 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:21:54,906 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:21:55,666 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 21:25:56,552 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:26:00,962 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:26:01,685 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 21:31:12,062 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:31:22,238 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:31:24,421 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 21:34:49,796 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 21:34:56,881 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 21:34:59,331 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 22:08:42,770 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 22:08:48,054 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:08:49,910 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 22:09:34,263 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 22:09:38,991 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:09:39,793 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 22:10:23,909 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 22:10:28,511 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:10:29,613 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 22:14:02,616 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:14:03,624 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 22:15:57,373 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:15:59,344 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 22:17:47,592 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:18:24,630 : dataVisualizer : plot_count --> device_make count plot ploted successfully
+INFO : 2022-08-30 22:20:04,152 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:30:47,828 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 22:30:56,794 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:30:59,367 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 22:31:00,079 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:31:01,589 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 22:31:02,392 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:31:04,886 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 22:31:08,339 : dataVisualizer : plot_pie -->  pie plot ploted successfully
+INFO : 2022-08-30 22:36:18,677 : dataVisualizer : plot_bar --> setting up bar plot
+INFO : 2022-08-30 22:37:23,024 : dataVisualizer : plot_bar --> setting up bar plot
+INFO : 2022-08-30 22:37:24,558 : dataVisualizer : plot_bar --> title bar plot ploted successfully
+INFO : 2022-08-30 22:40:04,423 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:40:04,892 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 22:41:15,767 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:41:16,705 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 22:42:43,160 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:42:44,440 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 22:44:34,366 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:44:35,108 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 22:46:32,190 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:46:32,733 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 22:53:51,368 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 22:53:58,889 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:00,265 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 22:54:01,082 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:02,099 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 22:54:03,083 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:05,574 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 22:54:07,105 : dataVisualizer : plot_pie --> device_make pie plot ploted successfully
+INFO : 2022-08-30 22:54:09,278 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:10,145 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 22:54:10,814 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:12,718 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 22:54:13,493 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:14,570 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 22:54:15,446 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:54:16,291 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 22:57:52,051 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 22:57:53,222 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 23:44:13,298 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 23:44:19,766 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:21,646 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 23:44:23,803 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:24,958 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 23:44:25,899 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:27,005 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 23:44:28,361 : dataVisualizer : plot_pie --> device_make pie plot ploted successfully
+INFO : 2022-08-30 23:44:30,116 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:30,921 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 23:44:32,041 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:33,229 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 23:44:33,765 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:34,370 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 23:44:34,958 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:35,586 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 23:44:35,860 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:37,125 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 23:44:37,587 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:44:39,923 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 23:48:37,865 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:48:39,013 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 23:48:39,219 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:48:39,877 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 23:48:40,075 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:48:40,863 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 23:48:41,095 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:48:42,584 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 23:50:02,789 : dataVisualizer : plot_heatmap --> setting up heat map plot
+INFO : 2022-08-30 23:52:17,426 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 23:52:20,027 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:20,588 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 23:52:20,770 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:21,291 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 23:52:21,536 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:22,618 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 23:52:23,147 : dataVisualizer : plot_pie --> device_make pie plot ploted successfully
+INFO : 2022-08-30 23:52:24,169 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:24,649 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 23:52:24,971 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:25,480 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 23:52:25,747 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:26,093 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 23:52:26,284 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:26,621 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 23:52:26,687 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:27,659 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 23:52:27,786 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:28,964 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 23:52:29,027 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:30,220 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 23:52:30,282 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:30,782 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 23:52:30,857 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:31,472 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 23:52:31,532 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:52:32,353 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 23:52:32,447 : dataVisualizer : plot_heatmap --> setting up heat map plot
+INFO : 2022-08-30 23:52:32,938 : dataVisualizer : plot_heatmap --> Heatmap of correlation for the numerical columns heat map plot ploted successfully
+INFO : 2022-08-30 23:58:00,072 : dataVisualizer : __init__ --> data visualier logger for EDA notebook.
+INFO : 2022-08-30 23:58:07,331 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:07,990 : dataVisualizer : plot_count --> experiment count plot ploted successfully
+INFO : 2022-08-30 23:58:09,161 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:09,519 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 23:58:10,898 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:12,225 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 23:58:14,184 : dataVisualizer : plot_pie --> device_make pie plot ploted successfully
+INFO : 2022-08-30 23:58:16,066 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:16,510 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 23:58:17,341 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:18,179 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 23:58:19,030 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:19,455 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 23:58:20,122 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:20,484 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 23:58:20,710 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:21,262 : dataVisualizer : plot_count --> date count plot ploted successfully
+INFO : 2022-08-30 23:58:21,398 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:22,632 : dataVisualizer : plot_count --> hour count plot ploted successfully
+INFO : 2022-08-30 23:58:22,852 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:24,139 : dataVisualizer : plot_count --> browser count plot ploted successfully
+INFO : 2022-08-30 23:58:24,373 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:25,052 : dataVisualizer : plot_count --> platform_os count plot ploted successfully
+INFO : 2022-08-30 23:58:25,329 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:26,098 : dataVisualizer : plot_count --> yes count plot ploted successfully
+INFO : 2022-08-30 23:58:26,254 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-08-30 23:58:27,100 : dataVisualizer : plot_count --> no count plot ploted successfully
+INFO : 2022-08-30 23:58:27,394 : dataVisualizer : plot_heatmap --> setting up heat map plot
+INFO : 2022-08-30 23:58:28,415 : dataVisualizer : plot_heatmap --> Correlation for the numerical columns heat map plot ploted successfully
+INFO : 2022-08-30 23:58:43,307 : dataVisualizer : plot_heatmap --> setting up heat map plot
+INFO : 2022-08-30 23:58:44,296 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot ploted successfully

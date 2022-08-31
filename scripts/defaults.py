@@ -1,4 +1,6 @@
 # setting up data, path and version variables
-local_path = '../data/AdSmartABdata.csv'
-path = 'data/AdSmartABdata.csv'
+data_file= 'AdSmartABdata.csv'
+
+local_path = '../data/' + data_file
+path = 'data/' + data_file
 repo = '../'
