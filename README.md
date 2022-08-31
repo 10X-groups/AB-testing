@@ -18,6 +18,7 @@ pip install -r requirements.txt
 ```
 
 ### Colaborators
-* [Birtukan ](https://github.com/Endework)
-* [Fisseha](https://github.com/didier-i)
+* [Birtukan Kuma](https://github.com/Endework)
+* [Fisseha Estifanos](https://github.com/didier-i)
+* [Hana Desta](https://github.com/Hanna-02)
 * [Yohanes Gutema](https://github.com/Yohanes-GR)
