@@ -1,15 +1,31 @@
-# Advertisement Data Analysis using AB-testing
-# About the project 
-In this repository, we used the data that was registered at different steps of the creative creation and ad placement process to perform a data engineering process and a machine learning prediction. In principle, the process should have used an identifier to link all the data sources coming from the different steps. Unfortunately, that was not done, so the data linking is done by using the metadata registered at each step of the process. After ingesting the data into a data lake, I have modeled and merged the data to a single unit in the data warehouse and expose the the interface for the machine learning task. 
-The basic tasks done in the process are the following:
-Task 1: Data engineering task to link the data from different sources
-Task 2: Machine learning model to predict creative performance
-;
-;
-;
+## SmartAd Performance Analysis
 
-# Authors 
-Birtukan Kuma
-Hanna Desta
-Fisseha Estifanos
-Yohanes Gutema
+**Table of content**
+
+- [SmartAd Performance Analysis](#smartadperformanceanalysis)
+  - [Overview](#overview)
+  - [Requirements](#requirements)
+  - [Install](#install)
+  - [Colaborators](#colaborators)
+
+### Overview
+A/B testing allows you to compare two or more versions of a given service to see which one performs better.
+
+This repository includes A/B testing implementations for the Classical, Sequential, and ML approaches. To raise brand awareness, we used data collected by an advertising company running an online ad for a client. To boost its market competitiveness, the advertising company offers an additional service that quantifies the increase in brand awareness caused by the ads it displays to its online users. 
+
+The main goal is to create a reliable hypothesis testing algorithm to determine whether the advertisements run by the advertising company resulted in a significant increase in brand awareness. We will look at Classical, Sequential, and Machine Learning approaches to A/B testing.
+
+### Requirements
+Python 3.5 and above
+
+### Install 
+```
+git clone https://github.com/10X-groups/AB-testing.git
+cd SmartAd-Performance-Analysis
+pip install -r requirements.txt
+```
+
+### Colaborators
+* [Birtukan ](https://github.com/Endework)
+* [Fisseha](https://github.com/didier-i)
+* [Yohanes Gutema](https://github.com/Yohanes-GR)
