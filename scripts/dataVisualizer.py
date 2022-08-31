@@ -6,7 +6,6 @@ A script to visualize data.
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-#from loggerImporter import setup_logger
 import logging
 
 class dataVisualizer():
@@ -40,6 +39,9 @@ class dataVisualizer():
         sns.set_theme(style="darkgrid")
         # TODO : modify all log messages properly
 
+        # TODO : add comments to all visualizer functions
+        # TODO : add try catch to all visualizer functions
+
 
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
@@ -55,30 +57,35 @@ class dataVisualizer():
         logger: logger
             The final logger that has been setup up
         """
-        # getting the log path
-        log_path = log_path
+        try:
+            # getting the log path
+            log_path = log_path
 
-        # adding logger to the script
-        logger = logging.getLogger(__name__)
-        print(f'--> {logger}')
-        # setting the log level to info
-        logger.setLevel(logging.INFO)
-        # setting up file handler
-        file_handler= logging.FileHandler(log_path)
+            # adding logger to the script
+            logger = logging.getLogger(__name__)
+            print(f'--> {logger}')
+            # setting the log level to info
+            logger.setLevel(logging.INFO)
+            # setting up file handler
+            file_handler= logging.FileHandler(log_path)
 
-        # setting up formatter
-        formatter= logging.Formatter(
-            "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " + 
-            "--> %(message)s")
+            # setting up formatter
+            formatter= logging.Formatter(
+                "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " + 
+                "--> %(message)s")
 
-        # setting up file handler and formatter
-        file_handler.setFormatter(formatter)
-        # adding file handler
-        logger.addHandler(file_handler)
+            # setting up file handler and formatter
+            file_handler.setFormatter(formatter)
+            # adding file handler
+            logger.addHandler(file_handler)
 
-        print(f'logger {logger} created at path: {log_path}')
-        # return the logger object
-        return logger
+            print(f'logger {logger} created at path: {log_path}')
+            # return the logger object
+        except Exception as e:
+            logger.error(e)
+            print(e)
+        finally:
+            return logger
 
     # TODO : add the name and things from last weeks pie plot function
     def plot_pie(self, df: pd.DataFrame, column: str, title: str = '',
@@ -162,11 +169,7 @@ class dataVisualizer():
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         self.logger.info(f'setting up heat map plot')
         plt.figure(figsize=(12, 7))
-        """sns.heatmap(df.corr(), annot=True, cmap='viridis', vmin=0, vmax=1, fmt='.2f',
-                    linewidths=.7, cbar=cbar)"""
-
         sns.heatmap(df.corr(), annot=True, fmt='.5f', linewidths=1, cbar=True)
-
         plt.title(title, size=20, fontweight='bold')
         plt.show()
         self.logger.info(f'{title} heat map plot ploted successfully')
