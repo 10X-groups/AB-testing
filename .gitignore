@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# vs related
+.vs/
+
+# py charm related
+.idea/
