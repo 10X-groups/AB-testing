@@ -352,3 +352,4 @@ INFO : 2022-09-01 20:51:31,553 : dataVisualizer : plot_heatmap --> setting up he
 INFO : 2022-09-01 20:51:32,206 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
 INFO : 2022-09-01 20:52:40,150 : dataVisualizer : plot_count --> setting up count plot
 INFO : 2022-09-01 20:52:42,025 : dataVisualizer : plot_count --> device_make count plot plotted successfully
+INFO : 2022-09-01 20:53:51,393 : dataVisualizer : plot_pie --> device_make pie plot plotted successfully
