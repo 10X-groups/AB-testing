@@ -423,3 +423,6 @@ INFO : 2022-09-01 22:10:16,150 : dataVisualizer : plot_heatmap --> setting up he
 INFO : 2022-09-01 22:10:16,995 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
 INFO : 2022-09-01 22:12:30,348 : dataVisualizer : plot_heatmap --> setting up heat map plot
 INFO : 2022-09-01 22:12:31,138 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
+INFO : 2022-09-01 22:49:02,402 : dataVisualizer : __init__ --> 
+   #####-->    Data visualizer logger for classical hypothesis testing notebook.   <--#####
+
