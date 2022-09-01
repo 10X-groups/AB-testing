@@ -143,17 +143,7 @@ class dataVisualizer():
             self.logger.info(f'{column} count plot plotted successfully')
         else:
             plt.title(f'Distribution of {title}', size=20, fontweight='bold')
-            self.logger.info(f'{title} count plot plotted successfully')
-
-
-        
-        titanic = sns.load_dataset("titanic")
-        sns.countplot(y="deck", hue="class", data=titanic, palette="Greens_d",
-              order=titanic.deck.value_counts().iloc[:3].index)
-
-
-
-        
+            self.logger.info(f'{title} count plot plotted successfully')        
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.xticks(rotation=45)
