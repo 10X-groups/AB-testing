@@ -305,3 +305,12 @@ INFO : 2022-09-01 19:03:59,875 : dataVisualizer : plot_count --> setting up coun
 INFO : 2022-09-01 19:04:00,147 : dataVisualizer : plot_count --> experiment vs no count plot plotted successfully
 INFO : 2022-09-01 19:04:14,372 : dataVisualizer : plot_heatmap --> setting up heat map plot
 INFO : 2022-09-01 19:04:16,690 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
+INFO : 2022-09-01 19:40:23,311 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-01 19:40:47,355 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-01 19:41:01,392 : dataVisualizer : plot_count --> experiment vs device make count plot plotted successfully
+INFO : 2022-09-01 19:43:04,397 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-01 19:44:42,675 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-01 19:46:49,736 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-01 19:46:53,692 : dataVisualizer : plot_count --> experiment vs device make count plot plotted successfully
+INFO : 2022-09-01 19:54:08,411 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-01 19:54:12,253 : dataVisualizer : plot_count --> experiment vs yes count plot plotted successfully
