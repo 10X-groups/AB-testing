@@ -145,10 +145,8 @@ def conditionalSPRT( x,y,t1,alpha=0.05,beta=0.10,stop=None):
         else:
             outcome='Their is no statistically significant difference between two test groups'
     if (stop!=None) & (k==np.nan):
-    #
-    # Truncate at trial stop, using Meeker's H0-conservative formula (2.2).
-    # Leave k=NA to indicate the decision was made due to truncation.
-    #
+ 
+   
         c1=clowerUpper(r,stop,t1,alpha,beta)
         c1=math.floor(np.mean(c1)-0.5)
         if x1[n0]<=c1:
