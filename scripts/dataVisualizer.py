@@ -29,7 +29,7 @@ class dataVisualizer():
         """
         # setting up logger
         self.logger = self.setup_logger('../logs/visualizer_root.log')
-        self.logger.info(f'data visualizer logger for {fromThe}.')
+        self.logger.info(f'\n ### data visualizer logger for {fromThe}. ### \n')
         print('Data visualizer in action')
 
         # setting up seaborn styles
@@ -143,7 +143,7 @@ class dataVisualizer():
             self.logger.info(f'{column} count plot plotted successfully')
         else:
             plt.title(f'Distribution of {title}', size=20, fontweight='bold')
-            self.logger.info(f'{title} count plot plotted successfully')
+            self.logger.info(f'{title} count plot plotted successfully')        
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.xticks(rotation=45)
