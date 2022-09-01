@@ -8,7 +8,7 @@ This repository includes A/B testing implementations for the Classical, Sequenti
 The main goal is to create a reliable hypothesis testing algorithm to determine whether the advertisements run by the advertising company resulted in a significant increase in brand awareness. We will look at Classical, Sequential, and Machine Learning approaches to A/B testing.
 
 ### Requirements
-Python 3.5 and above
+Python 3.5
 
 ### Install 
 ```
