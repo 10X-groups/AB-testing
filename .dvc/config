@@ -1,0 +1,5 @@
+[core]
+    remote = storage
+    autostage = true
+['remote "storage"']
+    url = C:/Users/f0x-tr0t/Documents/education/datascience/dvc-storage
