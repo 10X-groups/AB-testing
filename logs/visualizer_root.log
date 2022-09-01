@@ -426,3 +426,6 @@ INFO : 2022-09-01 22:12:31,138 : dataVisualizer : plot_heatmap --> Correlation o
 INFO : 2022-09-01 22:49:02,402 : dataVisualizer : __init__ --> 
    #####-->    Data visualizer logger for classical hypothesis testing notebook.   <--#####
 
+INFO : 2022-09-01 23:01:11,168 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for classical hypothesis testing notebook    <--#####
+
