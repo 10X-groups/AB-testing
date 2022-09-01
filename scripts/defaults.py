@@ -1,4 +1,4 @@
-# setting up data, path and version variables
+#setting 
 data_file= 'AdSmartABdata.csv'
 
 # the local data path
