@@ -19,3 +19,48 @@ INFO : 2022-09-02 20:55:10,195 : mlHelper : encode_to_numeric --> column: date l
 INFO : 2022-09-02 20:55:10,198 : mlHelper : encode_to_numeric --> column: device_make label encoded
 INFO : 2022-09-02 20:55:10,199 : mlHelper : encode_to_numeric --> column: browser label encoded
 INFO : 2022-09-02 20:55:10,199 : mlHelper : encode_to_numeric --> label encoding completed and ready to be returned
+INFO : 2022-09-02 22:31:50,728 : mlHelper : __init__ --> 
+    #####-->    Data preprocessing logger for ml hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 22:31:58,854 : mlHelper : encode_to_numeric --> columns: Index(['experiment', 'date', 'device_make', 'browser'], dtype='object') ready to be label encoded
+INFO : 2022-09-02 22:31:58,856 : mlHelper : encode_to_numeric --> column: experiment label encoded
+INFO : 2022-09-02 22:31:58,859 : mlHelper : encode_to_numeric --> column: date label encoded
+INFO : 2022-09-02 22:31:58,862 : mlHelper : encode_to_numeric --> column: device_make label encoded
+INFO : 2022-09-02 22:31:58,864 : mlHelper : encode_to_numeric --> column: browser label encoded
+INFO : 2022-09-02 22:31:58,865 : mlHelper : encode_to_numeric --> label encoding completed and ready to be returned
+INFO : 2022-09-02 23:14:37,188 : mlHelper : print_result --> setting up mean report
+INFO : 2022-09-02 23:14:37,211 : mlHelper : print_result --> fit time: 0.0318
+INFO : 2022-09-02 23:14:37,214 : mlHelper : print_result --> score time: 0.0202
+INFO : 2022-09-02 23:14:37,218 : mlHelper : print_result --> test_r2: -0.8326
+INFO : 2022-09-02 23:14:37,222 : mlHelper : print_result --> test_neg_mean_squared_error: -0.4538
+INFO : 2022-09-02 23:14:37,226 : mlHelper : print_result --> test_neg_root_mean_squared_error: -0.6732
+INFO : 2022-09-02 23:14:37,231 : mlHelper : print_result --> test_neg_mean_absolute_error: -0.4538
+INFO : 2022-09-02 23:14:37,236 : mlHelper : print_result --> test_accuracy: 0.5462
+INFO : 2022-09-02 23:14:37,239 : mlHelper : print_result --> test_precision: 0.5398
+INFO : 2022-09-02 23:14:37,242 : mlHelper : print_result --> setting up mean report
+INFO : 2022-09-02 23:14:37,253 : mlHelper : print_result --> fit time: 0.1462
+INFO : 2022-09-02 23:14:37,258 : mlHelper : print_result --> score time: 0.0172
+INFO : 2022-09-02 23:14:37,262 : mlHelper : print_result --> test_r2: -0.9412
+INFO : 2022-09-02 23:14:37,266 : mlHelper : print_result --> test_neg_mean_squared_error: -0.4803
+INFO : 2022-09-02 23:14:37,271 : mlHelper : print_result --> test_neg_root_mean_squared_error: -0.6928
+INFO : 2022-09-02 23:14:37,275 : mlHelper : print_result --> test_neg_mean_absolute_error: -0.4803
+INFO : 2022-09-02 23:14:37,281 : mlHelper : print_result --> test_accuracy: 0.5197
+INFO : 2022-09-02 23:14:37,284 : mlHelper : print_result --> test_precision: 0.4704
+INFO : 2022-09-02 23:15:01,437 : mlHelper : print_result --> setting up standard deviation report
+INFO : 2022-09-02 23:15:01,441 : mlHelper : print_result --> fit time: 0.0047
+INFO : 2022-09-02 23:15:01,445 : mlHelper : print_result --> score time: 0.01
+INFO : 2022-09-02 23:15:01,449 : mlHelper : print_result --> test_r2: 0.1168
+INFO : 2022-09-02 23:15:01,453 : mlHelper : print_result --> test_neg_mean_squared_error: 0.0331
+INFO : 2022-09-02 23:15:01,458 : mlHelper : print_result --> test_neg_root_mean_squared_error: 0.0248
+INFO : 2022-09-02 23:15:01,461 : mlHelper : print_result --> test_neg_mean_absolute_error: 0.0331
+INFO : 2022-09-02 23:15:01,465 : mlHelper : print_result --> test_accuracy: 0.0331
+INFO : 2022-09-02 23:15:01,469 : mlHelper : print_result --> test_precision: 0.1122
+INFO : 2022-09-02 23:15:01,474 : mlHelper : print_result --> setting up standard deviation report
+INFO : 2022-09-02 23:15:01,478 : mlHelper : print_result --> fit time: 0.2499
+INFO : 2022-09-02 23:15:01,482 : mlHelper : print_result --> score time: 0.0072
+INFO : 2022-09-02 23:15:01,487 : mlHelper : print_result --> test_r2: 0.1155
+INFO : 2022-09-02 23:15:01,492 : mlHelper : print_result --> test_neg_mean_squared_error: 0.0279
+INFO : 2022-09-02 23:15:01,496 : mlHelper : print_result --> test_neg_root_mean_squared_error: 0.0202
+INFO : 2022-09-02 23:15:01,500 : mlHelper : print_result --> test_neg_mean_absolute_error: 0.0279
+INFO : 2022-09-02 23:15:01,504 : mlHelper : print_result --> test_accuracy: 0.0279
+INFO : 2022-09-02 23:15:01,510 : mlHelper : print_result --> test_precision: 0.0472
