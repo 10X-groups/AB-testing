@@ -125,3 +125,29 @@ class machineLearningHelper():
                 #print(f"{train_key}: {round(model_result[train_key].std(), 4)}")
                 print(f"{test_key}: {round(model_result[test_key].std(), 4)}")
                 self.logger.info(f"{test_key}: {round(model_result[test_key].std(), 4)}")
+
+    # A function to change categorical variables to numerical value
+    def encode_to_numeric(self, data : pd.DataFrame,
+                          columns : list)-> pd.DataFrame:
+        """
+        A function to label encode values
+
+        Parameters
+        =--------=
+        data: data frame
+            The data frame containing all the values
+        columns: list
+            The list of column names to be label encoded
+
+        Returns
+        =-----=
+        data: pandas data frame
+            The data frame with the columns label encoded
+        """
+        lb = preprocessing.LabelEncoder()
+        self.logger.info(f'columns: {columns} ready to be label encoded')
+        for cols in columns:
+            data[cols] = lb.fit_transform(data[cols])
+            self.logger.info(f'column: {cols} label encoded')
+        self.logger.info(f'label encoding completed and ready to be returned')
+        return data
