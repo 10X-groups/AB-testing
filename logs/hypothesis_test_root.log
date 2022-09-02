@@ -44,3 +44,15 @@ INFO : 2022-09-02 15:54:45,456 : abTestHelper : get_pooled_std --> calculating p
 INFO : 2022-09-02 15:54:45,457 : abTestHelper : get_pooled_std --> pooled standard deviation calculated andreturned
 INFO : 2022-09-02 15:54:45,458 : abTestHelper : get_z_score --> calculating z score
 INFO : 2022-09-02 15:54:45,459 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 16:08:46,535 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:09:02,308 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:09:02,308 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:09:32,726 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
