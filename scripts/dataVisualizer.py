@@ -102,7 +102,7 @@ class dataVisualizer():
             Only plots the plot
         """
         # TODO : resolve this fig variable it is not being used
-        fig = plt.figure(figsize=(10, 10))
+        # fig = plt.figure(figsize=(10, 10))
         col = df[column].value_counts().nlargest(n=largest)
 
         data = col.values
