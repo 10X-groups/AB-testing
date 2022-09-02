@@ -8,6 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import logging
 
+
 class dataVisualizer():
     """
     A data visualizer class.
@@ -29,18 +30,18 @@ class dataVisualizer():
         """
         # setting up logger
         self.logger = self.setup_logger('../logs/visualizer_root.log')
-        self.logger.info(f'\n   #####-->    Data visualizer logger for {fromThe}.   <--#####\n')
+        self.logger.info('\n    #####-->    Data visualizer logger for ' +
+                         f'{fromThe}    <--#####\n')
         print('Data visualizer in action')
 
         # setting up seaborn styles
-        #pals = ['deep', 'muted', 'bright', 'pastel', 'dark', 'colorblind']
-        #sns.color_palette(palette='pastel')
+        # pals = ['deep', 'muted', 'bright', 'pastel', 'dark', 'colorblind']
+        # sns.color_palette(palette='pastel')
         # TODO: remove any other color
         sns.set_theme(style="darkgrid")
         # TODO : modify all log messages properly
         # TODO : add comments to all visualizer functions
         # TODO : add try catch to all visualizer functions
-
 
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
@@ -66,11 +67,11 @@ class dataVisualizer():
             # setting the log level to info
             logger.setLevel(logging.INFO)
             # setting up file handler
-            file_handler= logging.FileHandler(log_path)
+            file_handler = logging.FileHandler(log_path)
 
             # setting up formatter
-            formatter= logging.Formatter(
-                "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " + 
+            formatter = logging.Formatter(
+                "%(levelname)s : %(asctime)s : %(name)s : %(funcName)s " +
                 "--> %(message)s")
 
             # setting up file handler and formatter
@@ -88,7 +89,7 @@ class dataVisualizer():
 
     # TODO : add the name and things from last weeks pie plot function
     def plot_pie(self, df: pd.DataFrame, column: str, title: str = '',
-                 largest:int = 10) -> None:
+                 largest: int = 10) -> None:
         """
         A function to plot pie charts
 
@@ -100,7 +101,8 @@ class dataVisualizer():
         None: nothing
             Only plots the plot
         """
-        fig = plt.figure(figsize=(10, 10))
+        # TODO : resolve this fig variable it is not being used
+        # fig = plt.figure(figsize=(10, 10))
         col = df[column].value_counts().nlargest(n=largest)
 
         data = col.values
@@ -122,7 +124,7 @@ class dataVisualizer():
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         # plt.figure(figsize=(15, 10))
         # fig, ax = plt.subplots(1, figsize=(12, 7))
-        self.logger.info(f'setting up distribution plot')
+        self.logger.info('setting up distribution plot')
         sns.displot(data=df, x=column, color=color, kde=True, height=7,
                     aspect=2)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
@@ -131,8 +133,9 @@ class dataVisualizer():
         # logger.info(f'Distribution of {column} plot successfully plotted')
         self.logger.info(f'{column} hist plot plotted successfully')
 
-    def plot_count(self, df: pd.DataFrame, column: str, hue:str = '', title:str = '') -> None:
-        self.logger.info(f'setting up count plot')
+    def plot_count(self, df: pd.DataFrame, column: str, hue: str = '',
+                   title: str = '') -> None:
+        self.logger.info('setting up count plot')
         plt.figure(figsize=(12, 7))
         if hue == '':
             sns.countplot(data=df, x=column)
@@ -143,7 +146,7 @@ class dataVisualizer():
             self.logger.info(f'{column} count plot plotted successfully')
         else:
             plt.title(f'Distribution of {title}', size=20, fontweight='bold')
-            self.logger.info(f'{title} count plot plotted successfully')        
+            self.logger.info(f'{title} count plot plotted successfully')
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.xticks(rotation=45)
@@ -153,7 +156,7 @@ class dataVisualizer():
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
                  xlabel: str, ylabel: str) -> None:
-        self.logger.info(f'setting up bar plot')
+        self.logger.info('setting up bar plot')
         plt.figure(figsize=(12, 7))
         sns.barplot(data=df, x=x_col, y=y_col)
         plt.title(title, size=20)
@@ -166,7 +169,7 @@ class dataVisualizer():
 
     # TODO : update this correlation map with the one from last week
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
-        self.logger.info(f'setting up heat map plot')
+        self.logger.info('setting up heat map plot')
         plt.figure(figsize=(12, 7))
         sns.heatmap(df.corr(), annot=True, fmt='.5f', linewidths=1, cbar=True)
         plt.title(title, size=20, fontweight='bold')
@@ -174,7 +177,7 @@ class dataVisualizer():
         self.logger.info(f'{title} heat map plot plotted successfully')
 
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
-        self.logger.info(f'setting up box plot')
+        self.logger.info('setting up box plot')
         plt.figure(figsize=(12, 7))
         sns.boxplot(data=df, x=x_col)
         plt.title(title, size=20)
@@ -184,7 +187,7 @@ class dataVisualizer():
 
     def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str,
                        title: str) -> None:
-        self.logger.info(f'setting up box plot')
+        self.logger.info('setting up box plot')
         plt.figure(figsize=(12, 7))
         sns.boxplot(data=df, x=x_col, y=y_col)
         plt.title(title, size=20)
@@ -193,9 +196,9 @@ class dataVisualizer():
         plt.show()
         self.logger.info(f'{title} multi box plot plotted successfully')
 
-    def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str,
-                     hue: str, style: str) -> None:
-        self.logger.info(f'setting up scatter plot')
+    def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str,
+                     title: str, hue: str, style: str) -> None:
+        self.logger.info('setting up scatter plot')
         plt.figure(figsize=(12, 7))
         sns.scatterplot(data=df, x=x_col, y=y_col, hue=hue, style=style)
         plt.title(title, size=20)
@@ -204,14 +207,14 @@ class dataVisualizer():
         plt.show()
         self.logger.info(f'{title} scatter plot plotted successfully')
 
-    def bivariate_plot(self, df,features, fields):
-        fig, axs = plt.subplots(10,3, figsize=(20,45))
-        for col in range(len(features)):  
-            for f in range(len(fields)):  
-                self.logger.info(f'setting up hist plot')
+    def bi_variate_plot(self, df, features, fields):
+        fig, axs = plt.subplots(10, 3, figsize=(20, 45))
+        for col in range(len(features)):
+            for f in range(len(fields)):
+                self.logger.info('setting up hist plot')
                 sns.histplot(df, x=features[col]+"_"+fields[f],
-                            hue="diagnosis", element="bars", stat="count", 
-                            # TODO : modify palette
-                            palette=["gold", "purple"],
-                            ax=axs[col][f])
-        self.logger.info(f'several bi-variate plots plotted successfully')
+                             hue="diagnosis", element="bars", stat="count",
+                             # TODO : modify palette
+                             palette=["gold", "purple"],
+                             ax=axs[col][f])
+        self.logger.info('several bi-variate plots plotted successfully')

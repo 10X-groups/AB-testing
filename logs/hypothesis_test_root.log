@@ -1,0 +1,329 @@
+INFO : 2022-09-02 11:28:28,753 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger forclassical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 11:37:46,770 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger forclassical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 11:37:46,770 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger forclassical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 11:38:29,196 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger forclassical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 11:39:10,018 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 11:39:42,901 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 12:23:14,521 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 13:13:52,021 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 15:25:25,395 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 15:53:08,701 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 15:53:15,797 : abTestHelper : get_std --> calculating standard deviation
+INFO : 2022-09-02 15:53:15,798 : abTestHelper : get_std --> standard deviation calculated and returned
+INFO : 2022-09-02 15:53:15,798 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:53:15,856 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 15:53:16,774 : abTestHelper : get_pooled_std --> calculating pooled standard deviation
+INFO : 2022-09-02 15:53:16,774 : abTestHelper : get_pooled_std --> pooled standard deviation calculated andreturned
+INFO : 2022-09-02 15:53:16,775 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:53:16,775 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 15:53:17,962 : abTestHelper : get_pooled_std --> calculating pooled standard deviation
+INFO : 2022-09-02 15:53:17,963 : abTestHelper : get_pooled_std --> pooled standard deviation calculated andreturned
+INFO : 2022-09-02 15:53:17,963 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:53:17,964 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 15:54:45,456 : abTestHelper : get_pooled_std --> calculating pooled standard deviation
+INFO : 2022-09-02 15:54:45,457 : abTestHelper : get_pooled_std --> pooled standard deviation calculated andreturned
+INFO : 2022-09-02 15:54:45,458 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:54:45,459 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 16:08:46,535 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:09:02,308 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:09:02,308 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:09:32,726 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:36:10,332 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:36:25,679 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:36:25,679 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:36:39,944 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:36:39,944 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:36:39,950 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:36:39,950 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:36:39,953 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:36:39,953 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:36:39,954 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:36:39,954 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:36:39,959 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:36:39,959 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:36:39,960 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:36:39,960 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:36:39,961 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:36:39,961 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:38:41,680 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:38:43,337 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:38:43,346 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:38:43,347 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:38:43,348 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:38:43,356 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:38:43,357 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:38:43,358 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:39:39,114 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:39:40,888 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:39:40,898 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:39:40,900 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:39:40,900 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:39:40,908 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:39:40,910 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:39:40,911 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:42:15,224 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:42:18,005 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:42:18,026 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:42:18,027 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:42:18,028 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:42:18,054 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:42:18,056 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:42:18,057 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:43:04,739 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:43:06,557 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:43:06,566 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:43:06,567 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:43:06,568 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:43:06,576 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:43:06,579 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:43:06,580 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:46:02,647 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:46:17,655 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:46:17,655 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:46:36,268 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:46:36,268 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:46:36,268 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:46:38,539 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:46:38,539 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:46:38,539 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:46:38,549 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:38,549 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:38,549 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:38,554 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:38,554 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:38,554 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:38,555 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:46:38,555 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:46:38,555 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:46:38,563 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:38,563 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:38,563 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:38,564 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:38,564 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:38,564 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:38,565 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:46:38,565 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:46:38,565 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:46:44,998 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:46:44,998 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:46:44,998 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:46:45,016 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:45,016 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:45,016 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:45,020 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:45,020 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:45,020 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:45,020 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:46:45,020 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:46:45,020 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:46:45,028 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:45,028 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:45,028 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:46:45,030 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:45,030 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:45,030 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:46:45,037 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:46:45,037 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:46:45,037 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:47:24,857 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:47:24,857 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:47:24,857 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:47:24,857 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:47:32,801 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:47:32,801 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:47:32,801 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:47:32,801 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:47:32,810 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,810 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,810 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,810 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,813 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,813 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,813 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,813 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,814 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:47:32,814 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:47:32,814 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:47:32,814 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:47:32,827 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,827 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,827 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,827 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:47:32,829 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,829 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,829 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,829 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:47:32,830 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:47:32,830 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:47:32,830 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:47:32,830 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,948 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:48:36,948 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:48:36,948 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:48:36,948 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:48:36,956 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,956 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,956 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,956 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,957 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,957 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,957 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,957 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,958 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,958 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,958 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,958 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,968 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,968 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,968 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,968 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:48:36,972 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,972 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,972 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,972 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:48:36,974 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,974 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,974 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:48:36,974 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,555 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:49:02,555 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:49:02,555 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:49:02,555 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:49:02,565 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,565 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,565 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,565 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,567 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,567 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,567 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,567 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,568 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,568 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,568 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,568 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,575 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,575 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,575 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,575 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:02,577 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,577 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,577 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,577 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:02,578 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,578 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,578 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:49:02,578 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:49:15,148 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:49:15,148 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:49:15,148 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:49:15,148 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:49:15,148 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:49:39,864 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:49:43,241 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:49:43,249 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:43,251 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:43,251 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:49:43,259 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:49:43,261 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:49:43,262 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:50:37,603 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:50:37,614 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:50:37,617 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:50:37,617 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:50:37,628 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:50:37,629 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:50:37,629 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:51:12,935 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:51:12,946 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:51:12,948 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:51:12,948 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:51:12,957 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:51:12,958 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:51:12,959 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:52:21,355 : abTestHelper : transform_data --> preparing control group bernoulli series
+INFO : 2022-09-02 16:52:21,365 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:52:21,367 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:52:21,367 : abTestHelper : transform_data --> preparing exposed group bernoulli series
+INFO : 2022-09-02 16:52:21,375 : abTestHelper : get_bernoulli_series --> preparing bernoulli series
+INFO : 2022-09-02 16:52:21,376 : abTestHelper : get_bernoulli_series --> returning bernoulli series
+INFO : 2022-09-02 16:52:21,376 : abTestHelper : transform_data --> returning control and exposed group bernoulli series
+INFO : 2022-09-02 16:52:58,862 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 16:52:58,862 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
+
