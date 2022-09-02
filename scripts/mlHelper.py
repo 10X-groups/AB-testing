@@ -152,7 +152,7 @@ class machineLearningHelper():
         self.logger.info(f'label encoding completed and ready to be returned')
         return data
 
-    def label_awareness (row) -> int:
+    def label_awareness(self, row) -> int:
         """
         A function for creating an awareness column
 
