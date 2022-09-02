@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+[core]
+    remote = dvc-remote1
+['remote "dvc-remote"']
+    url = C:/Users/ACF/AppData/Local/Temp/dvc-storage
+['remote "dvc-remote1"']
+    url = https://github.com/10X-groups/AB-testing.git
+=======
+    remote = local_store
+    autostage = true
+['remote "remote_store"']
+    url = gdrive://1tqW4fbN4G10FXhketTvLclHFM12_rsDo
+['remote "local_store"']
+    url = C:\Users\f0x-tr0t\Documents\education\datascience\dvc-storage
+>>>>>>> 43db3ea449d4f4f660ba235d7e16ef720ad3dbff
