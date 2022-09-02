@@ -134,3 +134,6 @@ dmypy.json
 
 # py charm related
 .idea/
+
+# mlflow 
+mlruns/
