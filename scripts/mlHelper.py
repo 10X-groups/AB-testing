@@ -78,3 +78,50 @@ class machineLearningHelper():
             print(e)
         finally:
             return logger
+
+    def print_result (self, model_result : dict, scoring_metrics : list,
+                      metrics_type : str) -> None:
+        """
+        A function for creating model result reports: Mean
+
+        Parameters
+        =--------=
+        model_result: dict
+            Result of the model
+        scoring_metrics: list
+            List of scoring metrics
+        metrics_type: str
+            string of the metics type
+
+        Returns
+        =-----=
+        None: nothing
+            It will only print out the results
+        """
+        if metrics_type == 'mean':
+            print('\n--- Mean Report ---')
+            self.logger.info('setting up mean report')
+            print(f"fit time: {round(model_result['fit_time'].mean(), 4)}")
+            self.logger.info(f"fit time: {round(model_result['fit_time'].mean(), 4)}")
+            print(f"score time: {round(model_result['score_time'].mean(), 4)}")
+            self.logger.info(f"score time: {round(model_result['score_time'].mean(), 4)}")
+            for scores in scoring_metrics:
+                #train_key = 'train_' + scores
+                test_key = 'test_' + scores
+                #print(f"{train_key}: {round(model_result[train_key].mean(), 4)}")
+                print(f"{test_key}: {round(model_result[test_key].mean(), 4)}")
+                self.logger.info(f"{test_key}: {round(model_result[test_key].mean(), 4)}")
+        
+        if metrics_type == 'std':
+            print('\n--- Standard deviation Report ---')
+            self.logger.info('setting up standard deviation report')
+            print(f"fit time: {round(model_result['fit_time'].std(), 4)}")
+            self.logger.info(f"fit time: {round(model_result['fit_time'].std(), 4)}")
+            print(f"score time: {round(model_result['score_time'].std(), 4)}")
+            self.logger.info(f"score time: {round(model_result['score_time'].std(), 4)}")
+            for scores in scoring_metrics:
+                #train_key = 'train_' + scores
+                test_key = 'test_' + scores
+                #print(f"{train_key}: {round(model_result[train_key].std(), 4)}")
+                print(f"{test_key}: {round(model_result[test_key].std(), 4)}")
+                self.logger.info(f"{test_key}: {round(model_result[test_key].std(), 4)}")
