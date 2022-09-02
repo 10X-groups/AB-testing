@@ -82,28 +82,31 @@ class dataCleaner():
         finally:
             return logger
 
-    def remove_unwanted_cols(self, cols: list) -> pd.DataFrame:
+    def remove_unwanted_cols(self, df: pd.DataFrame, 
+                             cols: list) -> pd.DataFrame:
         """
         A function to remove unwanted columns from a DataFrame
 
         Parameters
         =--------=
+        df: pandas dataframe
+            The data frame containing all the data
         cols: list
-            The unwanted column lists
+            The unwanted columns lists
 
         Returns
         =-----=
-        self.df
+        df
             The dataframe rid of the unwanted cols
         """
         try:
-            self.df.drop(cols, axis=1, inplace=True)
+            df.drop(cols, axis=1, inplace=True)
             self.logger.info(f'columns: {cols} removed successfully')
         except Exception as e:
             self.logger.error(e)
             print(e)
         finally:
-            return self.df
+            return df
 
     def percent_missing(self, df: pd.DataFrame) -> None:
         """
