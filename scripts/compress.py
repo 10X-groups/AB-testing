@@ -8,7 +8,7 @@ import pandas as pd
 warnings.filterwarnings('ignore')
 
 # setting up logger
-from logger_importer import setup_logger
+from loggerImporter import setup_logger
 logger= setup_logger('logs/compress_root.log')
 logger.info(f'created a data compressor logger for compress.py file.')
 
