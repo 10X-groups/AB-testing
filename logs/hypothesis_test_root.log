@@ -22,3 +22,25 @@ INFO : 2022-09-02 12:23:14,521 : abTestHelper : __init__ -->
 INFO : 2022-09-02 13:13:52,021 : abTestHelper : __init__ --> 
     #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
 
+INFO : 2022-09-02 15:25:25,395 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 15:53:08,701 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for classical hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 15:53:15,797 : abTestHelper : get_std --> calculating standard deviation
+INFO : 2022-09-02 15:53:15,798 : abTestHelper : get_std --> standard deviation calculated and returned
+INFO : 2022-09-02 15:53:15,798 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:53:15,856 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 15:53:16,774 : abTestHelper : get_pooled_std --> calculating pooled standard deviation
+INFO : 2022-09-02 15:53:16,774 : abTestHelper : get_pooled_std --> pooled standard deviation calculated andreturned
+INFO : 2022-09-02 15:53:16,775 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:53:16,775 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 15:53:17,962 : abTestHelper : get_pooled_std --> calculating pooled standard deviation
+INFO : 2022-09-02 15:53:17,963 : abTestHelper : get_pooled_std --> pooled standard deviation calculated andreturned
+INFO : 2022-09-02 15:53:17,963 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:53:17,964 : abTestHelper : get_z_score --> z score calculated and returned
+INFO : 2022-09-02 15:54:45,456 : abTestHelper : get_pooled_std --> calculating pooled standard deviation
+INFO : 2022-09-02 15:54:45,457 : abTestHelper : get_pooled_std --> pooled standard deviation calculated andreturned
+INFO : 2022-09-02 15:54:45,458 : abTestHelper : get_z_score --> calculating z score
+INFO : 2022-09-02 15:54:45,459 : abTestHelper : get_z_score --> z score calculated and returned
