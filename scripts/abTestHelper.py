@@ -236,13 +236,13 @@ class abTestHelper():
         #
         """
         if t1<=1:
-            printLog('warning',"Odd ratio should exceed 1.")
-            self.logger.warn("Odd ratio should exceed 1.")
+            print('warning',"Odd ratio should exceed 1.")
+            # self.logger.warn("Odd ratio should exceed 1.")
         if (alpha >0.5) | (beta >0.5):
-            printLog('warning',"Unrealistic values of alpha or beta were passed."
+            print('warning',"Unrealistic values of alpha or beta were passed."
                         +" You should have good reason to use large alpha & beta values")
-            self.logger.warn("Unrealistic values of alpha or beta were passed."
-                        +" You should have good reason to use large alpha & beta values")
+            # self.logger.warn("Unrealistic values of alpha or beta were passed."
+                        # +" You should have good reason to use large alpha & beta values")
         if stop!=None:
             stop=math.floor(n0)
 
@@ -298,7 +298,7 @@ class abTestHelper():
             # Meeker's (1981) function exp(F(r,n,t)), proportional to the probability of 
             #  `r` (=x1+x2) in `n` paired trials with an odds ratio of `t`.
             #
-            # This function does *not* vectorize over its arguments.
+            # This function does *not* vectorized over its arguments.
             #"""
             upper=max(0,r-n)
             lower=min(n,r)
@@ -306,8 +306,8 @@ class abTestHelper():
             return np.sum(fterm(rng,r,n,t,offset))
 
         def fterm(j,r,n,t,offset=0):
-            ftlog=ftermlog(j,r,n,t,offset)
-            return np.array([math.exp(ex) for ex in ftlog])
+            ft_log=ftermlog(j,r,n,t,offset)
+            return np.array([math.exp(ex) for ex in ft_log])
 
         def ftermlog(j,r,n,t,offset=0):
             """
@@ -364,7 +364,7 @@ class abTestHelper():
             n=np.array([z for z in n if z<=stop])
         x1=np.cumsum(x[n-1])
         r=x1+np.cumsum(y[n-1])
-        stats=np.array(list(map(g,x1, r, n, [t1]*len(x1)))) #recurcively calls g
+        stats=np.array(list(map(g,x1, r, n, [t1]*len(x1)))) #recursively calls g
             #
             # Perform the test by finding the first index, if any, at which `stats`
             # falls outside the open interval (l, u).
@@ -379,8 +379,8 @@ class abTestHelper():
         limits=np.array(limits)
 
         k=np.where((stats>=u) | (stats<=l))
-        cvalues=stats[k]
-        if cvalues.shape[0]<1:
+        c_values=stats[k]
+        if c_values.shape[0]<1:
             k= np.nan
             outcome='Unable to conclude.Needs more sample.'
         else:
@@ -409,7 +409,7 @@ class abTestHelper():
         return (outcome,n, k,l,u,truncated,truncate_decision,x1,r,stats,limits)
 
 
-class ConditionalSPRT:
+class ConditionalSPRT():
     #REFERENCE
     # A Conditional Sequential Test for the Equality of Two Binomial Proportions
     # William Q. Meeker, Jr
@@ -424,7 +424,7 @@ class ConditionalSPRT:
         self.stop = stop
 
     def run(self):
-        res = conditionalSPRT( self.exposed,
+        res = abTestHelper.conditionalSPRT( self.exposed,
                                self.control,
                                self.odd_ratio,
                                self.alpha,
