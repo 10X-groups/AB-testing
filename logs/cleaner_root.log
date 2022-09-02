@@ -169,3 +169,13 @@ INFO : 2022-09-02 16:52:58,830 : dataCleaner : __init__ -->
 INFO : 2022-09-02 17:18:21,972 : dataCleaner : __init__ --> 
     #####-->    Data cleaner logger for ml hypothesis testing notebook    <--#####
 
+INFO : 2022-09-02 18:19:58,140 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 18:20:30,301 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 19:12:20,090 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 19:12:41,852 : dataCleaner : remove_unwanted_cols --> columns: ['auction_id'] removed successfully
