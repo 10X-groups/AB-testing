@@ -1,5 +1,7 @@
 [core]
-    remote = myremote
+    remote = local_store
     autostage = true
-['remote "myremote"']
-    url = gdrive://dvc/1tqW4fbN4G10FXhketTvLclHFM12_rsDo
+['remote "remote_store"']
+    url = gdrive://1tqW4fbN4G10FXhketTvLclHFM12_rsDo
+['remote "local_store"']
+    url = C:\Users\f0x-tr0t\Documents\education\datascience\dvc-storage
