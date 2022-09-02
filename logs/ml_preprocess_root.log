@@ -4,3 +4,18 @@ INFO : 2022-09-02 20:20:39,213 : mlHelper : __init__ -->
 INFO : 2022-09-02 20:25:36,598 : mlHelper : __init__ --> 
     #####-->    Data preprocessing logger for ml hypothesis testing notebook    <--#####
 
+INFO : 2022-09-02 20:37:19,871 : mlHelper : encode_to_numeric --> columns: Index(['experiment', 'date', 'device_make', 'browser'], dtype='object') ready to be label encoded
+INFO : 2022-09-02 20:37:19,885 : mlHelper : encode_to_numeric --> column: experiment label encoded
+INFO : 2022-09-02 20:37:19,887 : mlHelper : encode_to_numeric --> column: date label encoded
+INFO : 2022-09-02 20:37:19,889 : mlHelper : encode_to_numeric --> column: device_make label encoded
+INFO : 2022-09-02 20:37:19,891 : mlHelper : encode_to_numeric --> column: browser label encoded
+INFO : 2022-09-02 20:37:19,891 : mlHelper : encode_to_numeric --> label encoding completed and ready to be returned
+INFO : 2022-09-02 20:53:44,656 : mlHelper : __init__ --> 
+    #####-->    Data preprocessing logger for ml hypothesis testing notebook    <--#####
+
+INFO : 2022-09-02 20:55:10,189 : mlHelper : encode_to_numeric --> columns: Index(['experiment', 'date', 'device_make', 'browser'], dtype='object') ready to be label encoded
+INFO : 2022-09-02 20:55:10,193 : mlHelper : encode_to_numeric --> column: experiment label encoded
+INFO : 2022-09-02 20:55:10,195 : mlHelper : encode_to_numeric --> column: date label encoded
+INFO : 2022-09-02 20:55:10,198 : mlHelper : encode_to_numeric --> column: device_make label encoded
+INFO : 2022-09-02 20:55:10,199 : mlHelper : encode_to_numeric --> column: browser label encoded
+INFO : 2022-09-02 20:55:10,199 : mlHelper : encode_to_numeric --> label encoding completed and ready to be returned
