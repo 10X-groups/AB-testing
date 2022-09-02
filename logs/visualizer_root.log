@@ -546,3 +546,6 @@ INFO : 2022-09-02 16:52:58,846 : dataVisualizer : __init__ -->
 INFO : 2022-09-02 16:52:58,846 : dataVisualizer : __init__ --> 
     #####-->    Data visualizer logger for sequential hypothesis testing notebook    <--#####
 
+INFO : 2022-09-02 17:18:21,987 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for ml hypothesis testing notebook    <--#####
+

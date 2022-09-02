@@ -166,3 +166,6 @@ INFO : 2022-09-02 16:52:58,830 : dataCleaner : __init__ -->
 INFO : 2022-09-02 16:52:58,830 : dataCleaner : __init__ --> 
     #####-->    Data cleaner logger for sequential hypothesis testing notebook    <--#####
 
+INFO : 2022-09-02 17:18:21,972 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml hypothesis testing notebook    <--#####
+

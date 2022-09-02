@@ -327,3 +327,6 @@ INFO : 2022-09-02 16:52:58,862 : abTestHelper : __init__ -->
 INFO : 2022-09-02 16:52:58,862 : abTestHelper : __init__ --> 
     #####-->    AB hypothesis test logger for sequential hypothesis testing notebook    <--#####
 
+INFO : 2022-09-02 17:18:22,002 : abTestHelper : __init__ --> 
+    #####-->    AB hypothesis test logger for ml hypothesis testing notebook    <--#####
+
