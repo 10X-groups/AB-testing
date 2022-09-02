@@ -29,7 +29,7 @@ class abTestHelper():
         try:
             # setting up logger
             self.logger = self.setup_logger('../logs/hypothesis_test_root.log')
-            self.logger.info('\n    #####-->    AB hypothesis test logger for'
+            self.logger.info('\n    #####-->    AB hypothesis test logger for '
                              + f'{fromThe}    <--#####\n')
             print('Hypothesis test helper in action')
         except Exception as e:

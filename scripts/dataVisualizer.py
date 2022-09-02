@@ -30,7 +30,7 @@ class dataVisualizer():
         """
         # setting up logger
         self.logger = self.setup_logger('../logs/visualizer_root.log')
-        self.logger.info('\n    #####-->    Data visualizer logger for' +
+        self.logger.info('\n    #####-->    Data visualizer logger for ' +
                          f'{fromThe}    <--#####\n')
         print('Data visualizer in action')
 
