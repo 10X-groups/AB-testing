@@ -1,5 +1,5 @@
 [core]
-    remote = storage
+    remote = google_drive
     autostage = true
-['remote "storage"']
-    url = C:/Users/f0x-tr0t/Documents/education/datascience/dvc-storage
+['remote "google_drive"']
+    url = gdrive://1BqyeWl8oqgW6TQw-P-8kh05MhudyvFNg
