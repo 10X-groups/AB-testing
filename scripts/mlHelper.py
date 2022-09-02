@@ -91,7 +91,7 @@ class machineLearningHelper():
         scoring_metrics: list
             List of scoring metrics
         metrics_type: str
-            string of the metics type
+            String of the metics type
 
         Returns
         =-----=
@@ -126,11 +126,11 @@ class machineLearningHelper():
                 print(f"{test_key}: {round(model_result[test_key].std(), 4)}")
                 self.logger.info(f"{test_key}: {round(model_result[test_key].std(), 4)}")
 
-    # A function to change categorical variables to numerical value
     def encode_to_numeric(self, data : pd.DataFrame,
                           columns : list)-> pd.DataFrame:
         """
-        A function to label encode values
+        A function to change categorical variables to numerical value
+        Using label encoder
 
         Parameters
         =--------=
@@ -151,3 +151,22 @@ class machineLearningHelper():
             self.logger.info(f'column: {cols} label encoded')
         self.logger.info(f'label encoding completed and ready to be returned')
         return data
+
+    def label_awareness (row) -> int:
+        """
+        A function for creating an awareness column
+
+        Parameters
+        =--------=
+        row:
+            The row to calculate the awareness on
+
+        Returns
+        =-----=
+        int: integer
+            0 or 1 based on the input
+        """
+        if row['yes'] == 1 :
+            return 1
+        if row['no'] == 1 :
+            return 0
