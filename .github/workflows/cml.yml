@@ -14,7 +14,7 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       
       - uses: iterative/setup-cml@v1
-      - name: Write cml report
+      - name: generate cml report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
