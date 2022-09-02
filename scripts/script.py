@@ -6,7 +6,6 @@ def find_average(a_list:list)->float:
 
     return float(average)
 
-
 def count_occurrence(a_list:list)->dict:
     if type(a_list) not in [list, tuple, set]:
         raise TypeError("Argument Type can only be a list, tuple or a set")
