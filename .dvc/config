@@ -1,15 +1,12 @@
 [core]
-    remote = local_store     # Fisseha remote
-    # remote = dvc-remote1   # Birtukan remote
+    remote = local_store    # F
+    # remote = dvc-remote1  # B
     autostage = true
 ['remote "dvc-remote"']
     url = C:/Users/ACF/AppData/Local/Temp/dvc-storage
-    
 ['remote "dvc-remote1"']
     url = https://github.com/10X-groups/AB-testing.git
-    
 ['remote "remote_store"']
     url = gdrive://1tqW4fbN4G10FXhketTvLclHFM12_rsDo
-    
 ['remote "local_store"']
     url = C:\Users\f0x-tr0t\Documents\education\datascience\dvc-storage
