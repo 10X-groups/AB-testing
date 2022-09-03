@@ -8,4 +8,5 @@ eda:
   fromThe: 'explanatory data analysis stage'
   missing_values: ["n/a", "na", "undefined", '?', 'NA', 'undefined']
   dataFileName: 'AdSmartABdata.csv'
+  bioPercentage: 'control_and_exposed_percentage.csv'
   

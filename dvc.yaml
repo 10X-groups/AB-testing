@@ -9,8 +9,8 @@ stages:
       - preparation.fromThe
       - preparation.missing_values
       - preparation.dataFileName
-    outs:
-      - data/AdSmartABdata.csv
+    #outs:
+      #- data/AdSmartABdata.csv
   eda:
     cmd: python scripts/eda_stage.py
     deps:
@@ -22,5 +22,5 @@ stages:
       - eda.missing_values
       - eda.dataFileName
     outs:
-      - data/AdSmartABdata.csv
-      
+      # - data/AdSmartABdata.csv
+      - 'data/control_and_exposed_percentage.csv'
