@@ -1,13 +1,11 @@
 stages:  
   preparation:
-    cmd: python scripts/preparation_stage.py #data/prepared data/features
+    cmd: python scripts/preparation_stage.py
     deps:
-      #- data/prepared
       - scripts/preparation_stage.py
     params:
       - preparation.version
       - preparation.fromThe
       - preparation.missing_values
-      #- featurize.ngrams
     #outs:
       #- data/features
