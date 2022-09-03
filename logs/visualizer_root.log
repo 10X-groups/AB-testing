@@ -713,3 +713,111 @@ INFO : 2022-09-03 17:50:49,268 : dataVisualizer : __init__ -->
 INFO : 2022-09-03 17:51:39,827 : dataVisualizer : __init__ --> 
     #####-->    Data visualizer logger for data preparation stage    <--#####
 
+INFO : 2022-09-03 18:05:14,407 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
+INFO : 2022-09-03 18:06:26,492 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
+INFO : 2022-09-03 18:19:19,939 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for explanatory data analysis stage    <--#####
+
+INFO : 2022-09-03 18:19:42,683 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:21:15,478 : dataVisualizer : plot_count --> experiment count plot plotted successfully
+INFO : 2022-09-03 18:30:41,987 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for explanatory data analysis stage    <--#####
+
+INFO : 2022-09-03 18:30:42,844 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:30:43,457 : dataVisualizer : plot_count --> experiment count plot plotted successfully
+INFO : 2022-09-03 18:32:06,241 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for explanatory data analysis stage    <--#####
+
+INFO : 2022-09-03 18:32:07,242 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:32:07,873 : dataVisualizer : plot_count --> experiment count plot plotted successfully
+INFO : 2022-09-03 18:53:48,697 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for explanatory data analysis stage    <--#####
+
+INFO : 2022-09-03 18:53:49,395 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:49,907 : dataVisualizer : plot_count --> experiment count plot plotted successfully
+INFO : 2022-09-03 18:53:50,291 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:50,693 : dataVisualizer : plot_count --> date count plot plotted successfully
+INFO : 2022-09-03 18:53:51,019 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:51,611 : dataVisualizer : plot_count --> hour count plot plotted successfully
+INFO : 2022-09-03 18:53:52,004 : dataVisualizer : plot_pie --> device_make pie plot plotted successfully
+INFO : 2022-09-03 18:53:52,271 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:52,656 : dataVisualizer : plot_count --> browser count plot plotted successfully
+INFO : 2022-09-03 18:53:52,979 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:53,302 : dataVisualizer : plot_count --> yes count plot plotted successfully
+INFO : 2022-09-03 18:53:53,463 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:53,749 : dataVisualizer : plot_count --> no count plot plotted successfully
+INFO : 2022-09-03 18:53:53,928 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:54,293 : dataVisualizer : plot_count --> experiment vs date count plot plotted successfully
+INFO : 2022-09-03 18:53:54,603 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:54,991 : dataVisualizer : plot_count --> experiment vs hour count plot plotted successfully
+INFO : 2022-09-03 18:53:55,411 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:55,730 : dataVisualizer : plot_count --> experiment vs browser count plot plotted successfully
+INFO : 2022-09-03 18:53:56,103 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:56,375 : dataVisualizer : plot_count --> experiment vs yes count plot plotted successfully
+INFO : 2022-09-03 18:53:56,605 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:53:56,886 : dataVisualizer : plot_count --> experiment vs no count plot plotted successfully
+INFO : 2022-09-03 18:53:57,451 : dataVisualizer : plot_heatmap --> setting up heat map plot
+INFO : 2022-09-03 18:53:58,338 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
+INFO : 2022-09-03 18:57:24,162 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
+INFO : 2022-09-03 18:57:36,500 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for explanatory data analysis stage    <--#####
+
+INFO : 2022-09-03 18:57:37,169 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:37,643 : dataVisualizer : plot_count --> experiment count plot plotted successfully
+INFO : 2022-09-03 18:57:37,899 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:38,334 : dataVisualizer : plot_count --> date count plot plotted successfully
+INFO : 2022-09-03 18:57:38,644 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:39,240 : dataVisualizer : plot_count --> hour count plot plotted successfully
+INFO : 2022-09-03 18:57:39,616 : dataVisualizer : plot_pie --> device_make pie plot plotted successfully
+INFO : 2022-09-03 18:57:39,866 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:40,173 : dataVisualizer : plot_count --> browser count plot plotted successfully
+INFO : 2022-09-03 18:57:40,427 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:40,695 : dataVisualizer : plot_count --> yes count plot plotted successfully
+INFO : 2022-09-03 18:57:40,843 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:41,082 : dataVisualizer : plot_count --> no count plot plotted successfully
+INFO : 2022-09-03 18:57:41,191 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:41,444 : dataVisualizer : plot_count --> experiment vs date count plot plotted successfully
+INFO : 2022-09-03 18:57:41,623 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:41,924 : dataVisualizer : plot_count --> experiment vs hour count plot plotted successfully
+INFO : 2022-09-03 18:57:42,146 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:42,400 : dataVisualizer : plot_count --> experiment vs browser count plot plotted successfully
+INFO : 2022-09-03 18:57:42,600 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:42,792 : dataVisualizer : plot_count --> experiment vs yes count plot plotted successfully
+INFO : 2022-09-03 18:57:42,928 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:57:43,271 : dataVisualizer : plot_count --> experiment vs no count plot plotted successfully
+INFO : 2022-09-03 18:57:44,042 : dataVisualizer : plot_heatmap --> setting up heat map plot
+INFO : 2022-09-03 18:57:44,774 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
+INFO : 2022-09-03 18:59:09,718 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for explanatory data analysis stage    <--#####
+
+INFO : 2022-09-03 18:59:10,714 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:11,206 : dataVisualizer : plot_count --> experiment count plot plotted successfully
+INFO : 2022-09-03 18:59:11,447 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:11,680 : dataVisualizer : plot_count --> date count plot plotted successfully
+INFO : 2022-09-03 18:59:11,970 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:12,628 : dataVisualizer : plot_count --> hour count plot plotted successfully
+INFO : 2022-09-03 18:59:13,032 : dataVisualizer : plot_pie --> device_make pie plot plotted successfully
+INFO : 2022-09-03 18:59:13,351 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:13,732 : dataVisualizer : plot_count --> browser count plot plotted successfully
+INFO : 2022-09-03 18:59:13,939 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:14,173 : dataVisualizer : plot_count --> yes count plot plotted successfully
+INFO : 2022-09-03 18:59:14,350 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:14,620 : dataVisualizer : plot_count --> no count plot plotted successfully
+INFO : 2022-09-03 18:59:14,731 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:15,232 : dataVisualizer : plot_count --> experiment vs date count plot plotted successfully
+INFO : 2022-09-03 18:59:15,658 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:16,343 : dataVisualizer : plot_count --> experiment vs hour count plot plotted successfully
+INFO : 2022-09-03 18:59:16,825 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:17,267 : dataVisualizer : plot_count --> experiment vs browser count plot plotted successfully
+INFO : 2022-09-03 18:59:17,667 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:18,105 : dataVisualizer : plot_count --> experiment vs yes count plot plotted successfully
+INFO : 2022-09-03 18:59:18,433 : dataVisualizer : plot_count --> setting up count plot
+INFO : 2022-09-03 18:59:18,810 : dataVisualizer : plot_count --> experiment vs no count plot plotted successfully
+INFO : 2022-09-03 18:59:19,303 : dataVisualizer : plot_heatmap --> setting up heat map plot
+INFO : 2022-09-03 18:59:19,815 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
