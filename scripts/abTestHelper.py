@@ -21,7 +21,7 @@ class abTestHelper():
         The hypothesis test helper initializer
 
         Parameters
-        =---------=
+        =--------=
         fromThe: string
             The file importing the hypothesis test helper
 

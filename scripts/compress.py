@@ -1,6 +1,6 @@
 """A script to compress csv files."""
 
-# importing modules
+# imports
 import sys
 import dvc.api
 import warnings

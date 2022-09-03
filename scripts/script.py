@@ -1,6 +1,6 @@
 def find_average(a_list:list)->float:
     if type(a_list) not in [list, tuple, set]:
-        raise TypeError("Argument Type can only be a list, tuple or a set" )
+        raise TypeError("Argument Type can only be a list, tuple or a set")
 
     average = sum(a_list) / len(a_list)
 

@@ -2,7 +2,7 @@
 A script to visualize data.
 """
 
-# imports packages
+# imports
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
