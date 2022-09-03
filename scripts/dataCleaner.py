@@ -31,7 +31,7 @@ class dataCleaner():
         """
         try:
             # setting up logger
-            self.logger = self.setup_logger('../logs/cleaner_root.log')
+            self.logger = self.setup_logger('logs/cleaner_root.log')
             self.logger.info('\n    #####-->    Data cleaner logger for ' +
                              f'{fromThe}    <--#####\n')
             print('Data cleaner in action')
