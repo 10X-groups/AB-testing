@@ -1,7 +1,7 @@
 [core]
     remote = local_store1
     autostage = true
-['remote "remote_store"']
-    url = gdrive://1tqW4fbN4G10FXhketTvLclHFM12_rsDo
+#['remote "remote_store"']
+    #url = gdrive://1tqW4fbN4G10FXhketTvLclHFM12_rsDo
 ['remote "local_store"']
     url = C:\Users\mo\AB-testing\.dvc
