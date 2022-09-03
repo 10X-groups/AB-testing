@@ -12,5 +12,8 @@ local_path = '../data/' + data_file
 # the path to the data set
 path = 'data/' + data_file
 
+# the path to the data folder
+data_path = 'data/'
+
 # base repository
 repo = '../'
