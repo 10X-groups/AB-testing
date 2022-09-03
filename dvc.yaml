@@ -2,10 +2,11 @@ stages:
   preparation:
     cmd: python scripts/preparation_stage.py
     deps:
+      - data/AdSmartABdata.csv
       - scripts/preparation_stage.py
     params:
       - preparation.version
       - preparation.fromThe
       - preparation.missing_values
-    #outs:
-      #- data/features
+    outs:
+      - data/AdSmartABdata.csv

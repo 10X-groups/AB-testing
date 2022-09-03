@@ -15,6 +15,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
+print('initializing helper scripts and dependencies . . .')
 # set up paths and helper scripts
 sys.path.append('.')
 sys.path.append('..')
@@ -28,6 +29,7 @@ cleaner = dc.dataCleaner(params['fromThe'])
 visualizer = dv.dataVisualizer(params['fromThe'])
 
 
+print('loading data . . .')
 # read data using dvc
 version = params['version']
 # data path using dvc api
@@ -40,6 +42,7 @@ df = pd.read_csv(data_url, na_values=missing_values)
 print(df)
 
 
+print('display basic information . . .')
 print(f'shape: {df.shape}, size: {df.size}')
 print(df.info())
 print(f'duplicates: {df.duplicated().value_counts()}')
@@ -47,11 +50,14 @@ print(df.isna().sum())
 print(df.describe())
 
 
+print('converting date to date time . . .')
 # convert the date time feature into a datetime object
 df['date'] = pd.to_datetime(df['date'], errors='raise')
+df['date'] = df['date'].dt.date
 df.info()
 
+print('saving prepared data . . .')
 # save the data to file
-df.to_csv(defs.local_path, index=False)
+df.to_csv(defs.path, index=False)
 print('prepared file saved successfully')
 print('over and out')
