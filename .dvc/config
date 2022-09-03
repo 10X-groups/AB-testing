@@ -1,7 +1,7 @@
 [core]
-    remote = local_store    # F
     # remote = dvc-remote1  # B
     # remote = dvc-remote   # Y
+    remote = local_store    # F
     autostage = true
 ['remote "dvc-remote"']
     url = C:/Users/ACF/AppData/Local/Temp/dvc-storage
