@@ -24,7 +24,7 @@ class TestCases(unittest.TestCase):
 class TestCountOccurrence(unittest.TestCase):
     def test_count_occurrence(self):
         """
-        Test that it returns the count of each unique values in the given list
+        Test that it returns the count of each unique values in the given list.
         """
         data = [0,0,9,0,8,9,0,7]
         result = count_occurrence(data)

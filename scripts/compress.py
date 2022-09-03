@@ -29,7 +29,7 @@ missing_values = ["n/a", "na", "undefined", '?', 'NA', 'undefined']
 df = pd.read_csv(data_url, na_values=missing_values)
 logger.info(f'obtained the data {df.shape} from the data url: {data_url}')
 
-# compress and save the original data set
+# compress and save the original dataset
 df.to_csv(path + '.bz2', index=False)
 logger.info(f'file compressed and saved successfully to {path + ".bz2"}')
 print(f'file compressed and saved successfully to {path + ".bz2"}')

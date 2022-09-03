@@ -156,7 +156,7 @@ class dataCleaner():
             The data frame to modify
 
         Returns
-        =-----=
+        =------=
         df: pandas dataframe
             The modified dataframe
         """
