@@ -200,3 +200,23 @@ INFO : 2022-09-03 10:38:23,127 : dataCleaner : __init__ -->
     #####-->    Data cleaner logger for ml hypothesis testing notebook    <--#####
 
 INFO : 2022-09-03 10:39:09,963 : dataCleaner : remove_unwanted_cols --> columns: ['Unnamed: 0'] removed successfully
+INFO : 2022-09-03 11:02:19,346 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml preprocessing notebook    <--#####
+
+INFO : 2022-09-03 11:06:03,934 : dataCleaner : remove_unwanted_cols --> columns: ['auction_id'] removed successfully
+INFO : 2022-09-03 11:18:26,983 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml preprocessing notebook    <--#####
+
+INFO : 2022-09-03 11:18:29,815 : dataCleaner : remove_unwanted_cols --> columns: ['auction_id'] removed successfully
+INFO : 2022-09-03 11:22:07,697 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml modeling notebook    <--#####
+
+INFO : 2022-09-03 11:22:09,059 : dataCleaner : remove_unwanted_cols --> columns: ['Unnamed: 0'] removed successfully
+INFO : 2022-09-03 11:23:43,487 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml modeling notebook    <--#####
+
+INFO : 2022-09-03 11:23:45,101 : dataCleaner : remove_unwanted_cols --> columns: ['Unnamed: 0'] removed successfully
+INFO : 2022-09-03 12:44:04,184 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml modeling notebook    <--#####
+
+INFO : 2022-09-03 12:44:09,798 : dataCleaner : remove_unwanted_cols --> columns: ['Unnamed: 0'] removed successfully
