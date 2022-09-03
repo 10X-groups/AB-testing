@@ -277,3 +277,9 @@ INFO : 2022-09-03 13:52:37,626 : mlHelper : print_result --> test_neg_root_mean_
 INFO : 2022-09-03 13:52:37,631 : mlHelper : print_result --> test_neg_mean_absolute_error: 0.0218
 INFO : 2022-09-03 13:52:37,636 : mlHelper : print_result --> test_accuracy: 0.0218
 INFO : 2022-09-03 13:52:37,645 : mlHelper : print_result --> test_precision: 0.0387
+INFO : 2022-09-03 15:46:20,702 : mlHelper : __init__ --> 
+    #####-->    Data preprocessing logger for ml modeling notebook    <--#####
+
+INFO : 2022-09-03 15:46:20,702 : mlHelper : __init__ --> 
+    #####-->    Data preprocessing logger for ml modeling notebook    <--#####
+

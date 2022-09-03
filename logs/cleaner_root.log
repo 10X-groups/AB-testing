@@ -224,3 +224,9 @@ INFO : 2022-09-03 13:52:03,352 : dataCleaner : __init__ -->
     #####-->    Data cleaner logger for ml modeling notebook    <--#####
 
 INFO : 2022-09-03 13:52:04,433 : dataCleaner : remove_unwanted_cols --> columns: ['Unnamed: 0'] removed successfully
+INFO : 2022-09-03 15:46:20,481 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml modeling notebook    <--#####
+
+INFO : 2022-09-03 15:46:20,481 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for ml modeling notebook    <--#####
+

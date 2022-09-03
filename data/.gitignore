@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-/
-=======
+# was already there but removed it again, using rm cached
 /AdSmartABdata.csv
->>>>>>> cde35c0b110af45e650cfad59f7032dc8805918b
+
+# added after the merger
+/brw.csv
+/clean_data.csv
