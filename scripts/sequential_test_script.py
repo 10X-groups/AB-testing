@@ -24,7 +24,7 @@ def conditionalSPRT( x,y,t1,alpha=0.05,beta=0.10,stop=None):
     # * truncate_decision: The approximate decision made after truncate point
     # * truncated: If the test was truncated, the value of `n.0`; NA otherwise
     # * x1:       Original data `x`, cumulative
-    # * r:         Cumulative sum of x+y
+    # * r:         Cumulative sum of x+y,
     # * stats:     Series of cumulative sums of log probability ratios
     # * limits:    Two rows giving lower and upper critical limits, respectively
     #
