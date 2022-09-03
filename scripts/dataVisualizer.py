@@ -29,7 +29,7 @@ class dataVisualizer():
             script.
         """
         # setting up logger
-        self.logger = self.setup_logger('../logs/visualizer_root.log')
+        self.logger = self.setup_logger('logs/visualizer_root.log')
         self.logger.info('\n    #####-->    Data visualizer logger for ' +
                          f'{fromThe}    <--#####\n')
         print('Data visualizer in action')
@@ -42,6 +42,7 @@ class dataVisualizer():
         # TODO : modify all log messages properly
         # TODO : add comments to all visualizer functions
         # TODO : add try catch to all visualizer functions
+        # TODO : add save_as parameter just like the plot_count function for all functions
 
     def setup_logger(self, log_path: str) -> logging.Logger:
         """
@@ -89,7 +90,7 @@ class dataVisualizer():
 
     # TODO : add the name and things from last weeks pie plot function
     def plot_pie(self, df: pd.DataFrame, column: str, title: str = '',
-                 largest: int = 10) -> None:
+                 largest: int = 10, save_as: str = '') -> None:
         """
         A function to plot pie charts
 
@@ -119,7 +120,10 @@ class dataVisualizer():
         else:
             plt.title(title)
             self.logger.info(f'{title} pie plot plotted successfully')
-        plt.show()
+        if save_as == '':
+            plt.show()
+        else:
+            plt.savefig(save_as)
 
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         # plt.figure(figsize=(15, 10))
@@ -134,7 +138,7 @@ class dataVisualizer():
         self.logger.info(f'{column} hist plot plotted successfully')
 
     def plot_count(self, df: pd.DataFrame, column: str, hue: str = '',
-                   title: str = '') -> None:
+                   title: str = '', save_as:str = '') -> None:
         self.logger.info('setting up count plot')
         plt.figure(figsize=(12, 7))
         if hue == '':
@@ -150,7 +154,10 @@ class dataVisualizer():
         plt.xlabel(f'{column}', fontsize=16)
         plt.ylabel("Count", fontsize=16)
         plt.xticks(rotation=45)
-        plt.show()
+        if save_as == '':
+            plt.show()
+        else:
+            plt.savefig(save_as)
         # TODO: if logger info is bad try this
         # logger.info(f'Distribution of {column} plot successfully plotted')
 
@@ -168,12 +175,15 @@ class dataVisualizer():
         self.logger.info(f'{title} bar plot plotted successfully')
 
     # TODO : update this correlation map with the one from last week
-    def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
+    def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False, save_as: str ='') -> None:
         self.logger.info('setting up heat map plot')
         plt.figure(figsize=(12, 7))
         sns.heatmap(df.corr(), annot=True, fmt='.5f', linewidths=1, cbar=True)
         plt.title(title, size=20, fontweight='bold')
-        plt.show()
+        if save_as == '':
+            plt.show()
+        else:
+            plt.savefig(save_as)
         self.logger.info(f'{title} heat map plot plotted successfully')
 
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:

@@ -31,7 +31,7 @@ class dataCleaner():
         """
         try:
             # setting up logger
-            self.logger = self.setup_logger('../logs/cleaner_root.log')
+            self.logger = self.setup_logger('logs/cleaner_root.log')
             self.logger.info('\n    #####-->    Data cleaner logger for ' +
                              f'{fromThe}    <--#####\n')
             print('Data cleaner in action')
@@ -144,6 +144,8 @@ class dataCleaner():
             self.logger.error(e)
             print(e)
 
+    # TODO : modify this so that is can receive the feature to be converted as 
+    # a parameter
     def convert_to_datetime(self, df: pd.DataFrame) -> pd.DataFrame:
         """
         A function to convert datetime column to datetime
@@ -159,8 +161,8 @@ class dataCleaner():
             The modified dataframe
         """
         try:
-            df['Start'] = pd.to_datetime(df['Start'], errors='coerce')
-            df['End'] = pd.to_datetime(df['End'], errors='coerce')
+            df['Start'] = pd.to_datetime(df['Start'], errors='raise')
+            df['End'] = pd.to_datetime(df['End'], errors='raise')
             self.logger.info("features start and end successfully converted" +
                              "to date time")
         except Exception as e:
