@@ -19,8 +19,15 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
-          # TODO : add some clm plots
-          # echo "## Here goes some plots" >> report.md
-          # uncomment lines below
-          # cml publish plots/nameofplot.png --md >> report.md
-          # cml send-comment report.md
+          TODO : add some clm plots
+          echo "## EDA generated plots" >> report.md
+          cml publish plots/eda-fig-experiment.png --md >> report.md
+          cml publish plots/eda-fig-exp-yes.png --md >> report.md
+          cml publish plots/eda-fig-exp-no.png --md >> report.md
+          cml publish plots/eda-fig-date.png --md >> report.md
+          cml publish plots/eda-fig-device-make.png --md >> report.md
+          cml publish plots/platform-split-feature-importance.png--md >> report.md
+          cml publish plots/browser-split-feature-importance.png --md >> report.md
+          cml publish plots/eda-fig-correlation.png --md >> report.md
+          
+          cml send-comment report.md
