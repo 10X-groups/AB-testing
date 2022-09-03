@@ -18,8 +18,6 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Post reports as comments in GitHub PRs
-          TODO : add some clm plots
           echo "## EDA generated plots" >> report.md
           cml publish plots/eda-fig-experiment.png --md >> report.md
           cml publish plots/eda-fig-exp-yes.png --md >> report.md
