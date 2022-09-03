@@ -1,0 +1,26 @@
+stages:  
+  preparation:
+    cmd: python scripts/preparation_stage.py
+    deps:
+      - data/AdSmartABdata.csv
+      - scripts/preparation_stage.py
+    params:
+      - preparation.version
+      - preparation.fromThe
+      - preparation.missing_values
+      - preparation.dataFileName
+    #outs:
+      #- data/AdSmartABdata.csv
+  eda:
+    cmd: python scripts/eda_stage.py
+    deps:
+      - data/AdSmartABdata.csv
+      - scripts/eda_stage.py
+    params:
+      - eda.version
+      - eda.fromThe
+      - eda.missing_values
+      - eda.dataFileName
+    outs:
+      # - data/AdSmartABdata.csv
+      - 'data/control_and_exposed_percentage.csv'
