@@ -1,7 +1,7 @@
 [core]
-<<<<<<< HEAD
     remote = local_store    # F
     # remote = dvc-remote1  # B
+    # remote = dvc-remote   # Y
     autostage = true
 ['remote "dvc-remote"']
     url = C:/Users/ACF/AppData/Local/Temp/dvc-storage
@@ -11,8 +11,5 @@
     url = gdrive://1tqW4fbN4G10FXhketTvLclHFM12_rsDo
 ['remote "local_store"']
     url = C:\Users\f0x-tr0t\Documents\education\datascience\dvc-storage
-=======
-    remote=dvc-remote
  ['remote "dvc-remote"']
     url = C:\Users\mo\AppData\Local\Temp\tmp9z6tuboidvc
->>>>>>> 89780c3865183ff6327ea70cf36f955483472366
