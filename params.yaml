@@ -3,4 +3,9 @@ preparation:
   fromThe: 'data preparation stage'
   missing_values: ["n/a", "na", "undefined", '?', 'NA', 'undefined']
   dataFileName: 'AdSmartABdata.csv'
+eda:
+  version: 'v1'
+  fromThe: 'explanatory data analysis stage'
+  missing_values: ["n/a", "na", "undefined", '?', 'NA', 'undefined']
+  dataFileName: 'AdSmartABdata.csv'
   

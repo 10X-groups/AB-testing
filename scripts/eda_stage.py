@@ -1,5 +1,5 @@
 """
-A script for the preparation stage of the DVC pipeline.
+A script for the eda stage of the DVC pipeline.
 """
 
 # imports
@@ -23,7 +23,7 @@ sys.path.insert(1, '../scripts/')
 import defaults as defs
 import dataCleaner as dc
 import dataVisualizer as dv
-params = yaml.safe_load(open('params.yaml'))['preparation']
+params = yaml.safe_load(open('params.yaml'))['eda']
 # setup helper scripts
 cleaner = dc.dataCleaner(params['fromThe'])
 visualizer = dv.dataVisualizer(params['fromThe'])
@@ -50,21 +50,23 @@ print(f"---> file name: {params['dataFileName']}\n" +
 
 
 print('\ndisplay basic information . . .\n')
-print(f'shape: {df.shape}, size: {df.size}')
-print(df.info())
-print(f'duplicates: {df.duplicated().value_counts()}')
-print(df.isna().sum())
-print(df.describe())
 
 
-print('\nconverting date to date time . . .\n')
-# convert the date time feature into a datetime object
-df['date'] = pd.to_datetime(df['date'], errors='raise')
-# df['date'] = df['date'].dt.date
-df.info()
 
-print('\nsaving prepared data . . .\n')
+
+
+
+
+
+
+
+
+
+
+
+
+print('\nsaving explored and modified data . . .\n')
 # save the data to file
 df.to_csv(defs.data_path + params['dataFileName'], index=False)
-print('prepared data file saved successfully')
+print('explored and modified data file saved successfully')
 print('over and out')
