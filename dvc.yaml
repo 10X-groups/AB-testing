@@ -1,9 +1,9 @@
 stages:  
   preparation:
-    cmd: python scripts/cleaning_stage.py #data/prepared data/features
+    cmd: python scripts/preparation_stage.py #data/prepared data/features
     deps:
       #- data/prepared
-      - scripts/cleaning_stage.py
+      - scripts/preparation_stage.py
     params:
       - preparation.version
       - preparation.fromThe

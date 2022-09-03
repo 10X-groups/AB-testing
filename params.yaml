@@ -1,4 +1,4 @@
 preparation:
   version: 'v1'
-  fromThe: 'preparation script'
+  fromThe: 'data preparation stage'
   missing_values: ["n/a", "na", "undefined", '?', 'NA', 'undefined']
