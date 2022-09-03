@@ -6,6 +6,9 @@ A default script for all default variables
 # main data file name
 data_file = 'AdSmartABdata.csv'
 
+# the second file
+second_data_file = 'ABtwoCampaignEngView.csv'
+
 # the local data path
 local_path = '../data/' + data_file
 

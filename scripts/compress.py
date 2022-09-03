@@ -18,10 +18,10 @@ sys.path.insert(1, '../scripts/')
 from defaults import *
 
 # read data using dvc
-version = 'v1'
+#version = 'v1'
 
 # data path using dvc api
-data_url = dvc.api.get_url(path = path, rev = version)
+data_url = dvc.api.get_url(path = 'data/ABtwoCampaignEngView.csv')
 logger.info(f'obtained the data url: {data_url}')
 
 # reading the data
@@ -30,6 +30,13 @@ df = pd.read_csv(data_url, na_values=missing_values)
 logger.info(f'obtained the data {df.shape} from the data url: {data_url}')
 
 # compress and save the original dataset
-df.to_csv(path + '.bz2', index=False)
-logger.info(f'file compressed and saved successfully to {path + ".bz2"}')
-print(f'file compressed and saved successfully to {path + ".bz2"}')
+df.to_csv('../'+data_path + second_data_file + '.bz2', index=False)
+logger.info(f'file compressed and saved successfully to {data_path + second_data_file + ".bz2"}')
+print(f'file compressed and saved successfully to {data_path + second_data_file + ".bz2"}')
+
+
+"""new_df = pd.read_csv('data/ABtwoCampaignEngView.csv')
+new_df.info()
+#new_df.drop(['Unnamed: 0'], axis=1, inplace=True)
+new_df.info()
+new_df.to_csv('data/ABtwoCampaignEngView.csv', index=False)"""

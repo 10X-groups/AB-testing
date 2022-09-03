@@ -2,3 +2,20 @@ INFO : 2022-08-30 17:06:30,456 : logger_importer : <module> --> created a data c
 INFO : 2022-08-30 17:06:31,306 : logger_importer : <module> --> obtained the data url: C:\Users\f0x-tr0t\Documents\education\datascience\dvc-storage\1a\e19300fae64a8d41f40122d8f68a53
 INFO : 2022-08-30 17:06:31,359 : logger_importer : <module> --> obtained the data (8077, 9) from the data url: C:\Users\f0x-tr0t\Documents\education\datascience\dvc-storage\1a\e19300fae64a8d41f40122d8f68a53
 INFO : 2022-08-30 17:06:31,966 : logger_importer : <module> --> file compressed and saved successfully to data/AdSmartABdata.csv.bz2
+INFO : 2022-09-04 00:31:57,055 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:33:35,354 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:34:13,967 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:36:09,183 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:36:49,668 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:37:54,501 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:38:16,388 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:40:27,015 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:41:02,468 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:42:26,142 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:43:23,632 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:43:50,525 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:44:10,887 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:46:31,846 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:47:05,370 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:47:58,613 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
+INFO : 2022-09-04 00:48:34,021 : loggerImporter : <module> --> created a data compressor logger for compress.py file.
