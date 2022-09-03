@@ -63,7 +63,7 @@ df['date'] = pd.to_datetime(df['date'], errors='raise')
 # df['date'] = df['date'].dt.date
 df.info()
 
-print('\nsaving prepared data . . .\n')
+print('\nsaving prepared data . . .')
 # save the data to file
 df.to_csv(defs.data_path + params['dataFileName'], index=False)
 print('prepared data file saved successfully')
