@@ -230,3 +230,12 @@ INFO : 2022-09-03 15:46:20,481 : dataCleaner : __init__ -->
 INFO : 2022-09-03 15:46:20,481 : dataCleaner : __init__ --> 
     #####-->    Data cleaner logger for ml modeling notebook    <--#####
 
+INFO : 2022-09-03 16:03:40,902 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for EDA notebook    <--#####
+
+INFO : 2022-09-03 16:13:29,283 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for EDA notebook    <--#####
+
+INFO : 2022-09-03 16:15:29,425 : dataCleaner : __init__ --> 
+    #####-->    Data cleaner logger for EDA notebook    <--#####
+
