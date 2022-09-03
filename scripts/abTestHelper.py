@@ -331,7 +331,7 @@ class abTestHelper():
         def logf(r,n,t,offset=0):
             """
             #
-            # A protected vesion of log(f), Meeker's function `F`.
+            # A protected version of log(f), Meeker's function `F`.
             #
             """
             z=f(r,n,t,offset)
@@ -398,10 +398,10 @@ class abTestHelper():
             c1=math.floor(np.mean(c1)-0.5)
             if x1[n0]<=c1:
                 truncate_decision='h0'
-                outcome='Maximum Limit Decision. The aproximate decision point shows their is no statistically significant difference between two test groups'
+                outcome='Maximum Limit Decision. The approximate decision point shows their is no statistically significant difference between two test groups'
             else:
                 truncate_decision='h1'
-                outcome=f'Maximum Limit Decision. The aproximate decision point shows exposed group produced a statistically significant increase.'
+                outcome=f'Maximum Limit Decision. The approximate decision point shows exposed group produced a statistically significant increase.'
             truncated=stop
         else:
             truncate_decision='Non'
