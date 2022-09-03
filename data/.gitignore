@@ -1,1 +1,6 @@
+# was already there but removed it again, using rm cached
 /AdSmartABdata.csv
+
+# added after the merger
+/brw
+/clean_Data.csv
