@@ -668,3 +668,18 @@ INFO : 2022-09-03 16:15:57,917 : dataVisualizer : plot_count --> setting up coun
 INFO : 2022-09-03 16:15:58,151 : dataVisualizer : plot_count --> experiment vs no count plot plotted successfully
 INFO : 2022-09-03 16:16:04,395 : dataVisualizer : plot_heatmap --> setting up heat map plot
 INFO : 2022-09-03 16:16:05,670 : dataVisualizer : plot_heatmap --> Correlation of the numerical columns heat map plot plotted successfully
+INFO : 2022-09-03 17:06:13,300 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
+INFO : 2022-09-03 17:07:05,244 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
+INFO : 2022-09-03 17:08:06,953 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
+INFO : 2022-09-03 17:16:06,356 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
+INFO : 2022-09-03 17:16:37,243 : dataVisualizer : __init__ --> 
+    #####-->    Data visualizer logger for data preparation stage    <--#####
+
