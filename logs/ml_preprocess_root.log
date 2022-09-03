@@ -238,3 +238,42 @@ INFO : 2022-09-03 12:44:29,195 : mlHelper : print_result --> test_neg_root_mean_
 INFO : 2022-09-03 12:44:29,199 : mlHelper : print_result --> test_neg_mean_absolute_error: 0.0279
 INFO : 2022-09-03 12:44:29,203 : mlHelper : print_result --> test_accuracy: 0.0279
 INFO : 2022-09-03 12:44:29,208 : mlHelper : print_result --> test_precision: 0.0472
+INFO : 2022-09-03 13:52:03,388 : mlHelper : __init__ --> 
+    #####-->    Data preprocessing logger for ml modeling notebook    <--#####
+
+INFO : 2022-09-03 13:52:36,742 : mlHelper : print_result --> setting up mean report
+INFO : 2022-09-03 13:52:36,746 : mlHelper : print_result --> fit time: 0.0242
+INFO : 2022-09-03 13:52:36,750 : mlHelper : print_result --> score time: 0.018
+INFO : 2022-09-03 13:52:36,754 : mlHelper : print_result --> test_r2: -0.8194
+INFO : 2022-09-03 13:52:36,759 : mlHelper : print_result --> test_neg_mean_squared_error: -0.4506
+INFO : 2022-09-03 13:52:36,763 : mlHelper : print_result --> test_neg_root_mean_squared_error: -0.6707
+INFO : 2022-09-03 13:52:36,773 : mlHelper : print_result --> test_neg_mean_absolute_error: -0.4506
+INFO : 2022-09-03 13:52:36,776 : mlHelper : print_result --> test_accuracy: 0.5494
+INFO : 2022-09-03 13:52:36,780 : mlHelper : print_result --> test_precision: 0.5536
+INFO : 2022-09-03 13:52:36,784 : mlHelper : print_result --> setting up mean report
+INFO : 2022-09-03 13:52:36,789 : mlHelper : print_result --> fit time: 0.0176
+INFO : 2022-09-03 13:52:36,793 : mlHelper : print_result --> score time: 0.0402
+INFO : 2022-09-03 13:52:36,798 : mlHelper : print_result --> test_r2: -0.9378
+INFO : 2022-09-03 13:52:36,802 : mlHelper : print_result --> test_neg_mean_squared_error: -0.4795
+INFO : 2022-09-03 13:52:36,806 : mlHelper : print_result --> test_neg_root_mean_squared_error: -0.6923
+INFO : 2022-09-03 13:52:36,810 : mlHelper : print_result --> test_neg_mean_absolute_error: -0.4795
+INFO : 2022-09-03 13:52:36,814 : mlHelper : print_result --> test_accuracy: 0.5205
+INFO : 2022-09-03 13:52:36,818 : mlHelper : print_result --> test_precision: 0.4705
+INFO : 2022-09-03 13:52:37,556 : mlHelper : print_result --> setting up standard deviation report
+INFO : 2022-09-03 13:52:37,563 : mlHelper : print_result --> fit time: 0.0066
+INFO : 2022-09-03 13:52:37,567 : mlHelper : print_result --> score time: 0.004
+INFO : 2022-09-03 13:52:37,571 : mlHelper : print_result --> test_r2: 0.1347
+INFO : 2022-09-03 13:52:37,577 : mlHelper : print_result --> test_neg_mean_squared_error: 0.0375
+INFO : 2022-09-03 13:52:37,582 : mlHelper : print_result --> test_neg_root_mean_squared_error: 0.0284
+INFO : 2022-09-03 13:52:37,586 : mlHelper : print_result --> test_neg_mean_absolute_error: 0.0375
+INFO : 2022-09-03 13:52:37,592 : mlHelper : print_result --> test_accuracy: 0.0375
+INFO : 2022-09-03 13:52:37,597 : mlHelper : print_result --> test_precision: 0.1
+INFO : 2022-09-03 13:52:37,601 : mlHelper : print_result --> setting up standard deviation report
+INFO : 2022-09-03 13:52:37,605 : mlHelper : print_result --> fit time: 0.0021
+INFO : 2022-09-03 13:52:37,613 : mlHelper : print_result --> score time: 0.0233
+INFO : 2022-09-03 13:52:37,616 : mlHelper : print_result --> test_r2: 0.0893
+INFO : 2022-09-03 13:52:37,621 : mlHelper : print_result --> test_neg_mean_squared_error: 0.0218
+INFO : 2022-09-03 13:52:37,626 : mlHelper : print_result --> test_neg_root_mean_squared_error: 0.0158
+INFO : 2022-09-03 13:52:37,631 : mlHelper : print_result --> test_neg_mean_absolute_error: 0.0218
+INFO : 2022-09-03 13:52:37,636 : mlHelper : print_result --> test_accuracy: 0.0218
+INFO : 2022-09-03 13:52:37,645 : mlHelper : print_result --> test_precision: 0.0387
