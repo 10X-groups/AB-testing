@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  preparation:
+    cmd: python scripts/preparation_stage.py
+    deps:
+    - path: scripts/preparation_stage.py
+      md5: 6284f71a23f0c44f07e4e99ad5484dd4
+      size: 1044
+    params:
+      params.yaml:
+        preparation.fromThe: data preparation stage
+        preparation.missing_values:
+        - n/a
+        - na
+        - undefined
+        - '?'
+        - NA
+        - undefined
+        preparation.version: v1
